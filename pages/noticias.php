@@ -59,7 +59,7 @@ try {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="bg-light">
+<body class="bg-light d-flex flex-column min-vh-100">
 
     <!-- Barra de navegación -->
     <nav id="nav-principal" class="navbar navbar-expand-lg navbar-dark">
@@ -78,7 +78,7 @@ try {
                     <li class="nav-item"><a class="nav-link" href="../index.php">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="asociaciones.php">Asociaciones</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="educacion.php">Educación</a></li>
                     <li class="nav-item"><a class="nav-link" href="../login/login.php" id="login">Login</a></li>
                 </ul>
             </div>
@@ -86,7 +86,7 @@ try {
     </nav>
 
     <!-- Encabezado -->
-    <div class="container mt-4">
+    <div class="container mt-4 flex-grow-1">
         <h2 class="text-center mb-4">Últimas Noticias</h2>
         
         <!-- Sección de Noticias -->
@@ -95,7 +95,7 @@ try {
                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     // Limitar contenido a 200 caracteres
                     $contenido = htmlspecialchars($row["contenido"]);
-                    $contenido_limitado = strlen($contenido) > 200 ? substr($contenido, 0, 300) . '...' : $contenido;
+                    $contenido_limitado = strlen($contenido) > 200 ? substr($contenido, 0, 350) . '...' : $contenido;
             ?>
                     <div class="col-md-4 mb-4">
                         <div class="card shadow-sm">
@@ -138,7 +138,8 @@ try {
         </nav>
     </div>
 
-    <footer id="footer-principal" class="text-white text-center py-4">
+    <!-- Pie de página -->
+    <footer id="footer-principal" class="text-white text-center py-4 mt-auto">
         <p class="mb-0">&copy; 2025 Unidos Contra el Cáncer. Todos los derechos reservados</p>
     </footer>
 
