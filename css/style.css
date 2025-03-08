@@ -1,0 +1,153 @@
+html,
+body {
+    height: 100%;
+    /* Hacer que el body ocupe toda la altura de la pantalla */
+    margin: 0;
+    /* Eliminar márgenes por defecto */
+    display: flex;
+    /* Usar flexbox */
+    flex-direction: column;
+    /* Organizar los elementos de arriba hacia abajo */
+}
+
+#nav-principal {
+    background-color: #3F51B5;
+}
+
+#footer-principal {
+    background-color: #3F51B5;
+    /* Color personalizado */
+    color: white;
+    /* Asegura que el texto sea blanco */
+}
+
+#btn-registrar {
+    background-color: #E91E63;
+}
+
+#btn-registrar {
+    transition: transform 0.2s ease-in-out !important;
+}
+
+#btn-registrar:hover {
+    transform: translateY(-5px) !important;
+}
+
+#submit-login {
+    background-color: #E91E63;
+}
+
+/* Ajustes del logo */
+.navbar-brand img {
+    height: 70px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand span {
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.form-control {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#container-new-news {
+    transition-property: none;
+}
+
+/* Ajustes en móviles */
+@media (max-width: 992px) {
+    .navbar-brand img {
+        height: 50px;
+    }
+
+    .navbar-brand span {
+        font-size: 1.2rem;
+    }
+}
+
+/* Botón flotante */
+#btn-registrar-asociacion {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+#btn-registrar-asociacion:hover {
+    transform: scale(1.1);
+}
+
+/* Ajuste de secciones */
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive para secciones */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para el contenedor principal */
+#page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ocupa al menos el 100% de la altura de la ventana */
+}
+
+/* Estilos para el contenido principal */
+#content-wrap {
+    flex: 1;
+    /* Ocupa el espacio disponible */
+}
+
+/* Estilos para la imagen de la noticia */
+.web-noticia-imagen {
+    max-height: 400px;
+    /* Limita la altura máxima de la imagen */
+    object-fit: cover;
+    /* Ajusta la imagen sin distorsionarla */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+/* Estilos para el contenido de la noticia */
+.web-noticia-contenido p {
+    margin-bottom: 1.5rem;
+    /* Espaciado entre párrafos */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .web-noticia-contenido {
+        font-size: 1rem;
+        /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .web-noticia-imagen {
+        max-height: 300px;
+        /* Altura máxima más pequeña en móviles */
+    }
+}
+
+/* Imagen de la portada de asociaciones */
+#portada-asociacion {
+    max-height: 650px; /* Altura máxima de 300px */
+    width: auto; /* Mantiene la proporción de la imagen */
+}
+
