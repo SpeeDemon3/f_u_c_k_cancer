@@ -87,7 +87,11 @@ try {
 
     <!-- Encabezado -->
     <div class="container mt-4 flex-grow-1">
-        <h2 class="text-center mb-4">Últimas Noticias</h2>
+        <div class="d-flex justify-content-center align-items-center">
+            <img src="../img/sec_noticias.jpg" class="img-fluid img-thumbnail rounded m-5 text-center" alt="Seccion de noticias, imagen de un medico">
+        </div>
+
+        <h2 class="text-center mb-4 mt-4">Últimas Noticias</h2>
         
         <!-- Sección de Noticias -->
         <div class="row">
@@ -97,7 +101,7 @@ try {
                     $contenido = htmlspecialchars($row["contenido"]);
                     $contenido_limitado = strlen($contenido) > 200 ? substr($contenido, 0, 350) . '...' : $contenido;
             ?>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-3">
                         <div class="card shadow-sm">
                             <img src="../<?= htmlspecialchars($row["imagen_url"]) ?>" class="card-img-top" alt="Noticia">
                             <div class="card-body">
