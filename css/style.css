@@ -151,3 +151,16 @@ body {
     width: auto; /* Mantiene la proporción de la imagen */
 }
 
+/* Ajustes boton leer mas educacion */
+.btn-custom {
+    padding: 0.5rem 0.5rem; 
+    font-size: 0.9rem; 
+    color: black;
+    font-weight: bold;
+    width: auto; /* El ancho se ajusta al contenido */
+    max-width: 120px; /* Establece un ancho máximo (ajusta según necesites) */
+}
+
+.btn-custom:hover {
+    color: rgb(243, 242, 242);
+}

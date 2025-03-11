@@ -1,20 +1,3 @@
-<?php
-session_start();
-
-require_once("../functions/tools.php");
-
-if (isset($_SESSION['rol'])) {
-    if ($_SESSION['rol'] == 1) {
-        echo mostrarLinkAsociacionDesdeNoticia();
-    }
-
-    if ($_SESSION['rol'] == 3) {
-        echo mostrarLinkAdminDesdeNoticia();
-    }
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -82,31 +65,32 @@ if (isset($_SESSION['rol'])) {
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="../img/prevencion1.jpg" class="card-img-top" alt="Prevención 1">
-                            <div class="card-body">
+                            <img src="../img/educacion/educacion-prevenir.jpg" class="card-img-top" alt="Prevención 1">
+                            <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Cómo prevenir el cáncer</h5>
-                                <p class="card-text">Consejos prácticos para reducir el riesgo de cáncer.</p>
-                                <a href="#" class="btn btn-primary">Leer más</a>
+                                <p class="card-text mb-3">Consejos prácticos para reducir el riesgo de cáncer.</p>
+                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="../img/prevencion2.jpg" class="card-img-top" alt="Prevención 2">
-                            <div class="card-body">
+                            <img src="../img/educacion/educacion-chequeos.jpg" class="card-img-top" alt="Prevención 2">
+                            <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Importancia de los chequeos</h5>
-                                <p class="card-text">Por qué son importantes los exámenes médicos regulares.</p>
-                                <a href="#" class="btn btn-primary">Leer más</a>
+                                <p class="card-text mb-3">Por qué son importantes los exámenes médicos regulares.</p>
+                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Video: Prevención del cáncer</h5>
-                                <div class="ratio ratio-16x9">
+                            <div class="card-body d-flex flex-column">
+                                <div class="ratio ratio-16x9  mb-3 mt-3">
                                     <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
                                 </div>
+                                <h5 class="card-title pt-4">Video: Prevención del cáncer</h5>
+                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
@@ -118,56 +102,58 @@ if (isset($_SESSION['rol'])) {
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="../img/sintomas1.jpg" class="card-img-top" alt="Síntomas 1">
-                            <div class="card-body">
+                            <img src="../img/educacion/educacion-sintomas.jpg" class="card-img-top" alt="Síntomas 1">
+                            <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Síntomas comunes</h5>
-                                <p class="card-text">Conoce los síntomas más frecuentes del cáncer.</p>
-                                <a href="#" class="btn btn-primary">Leer más</a>
+                                <p class="card-text mb-3">Conoce los síntomas más frecuentes del cáncer.</p>
+                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="../img/sintomas2.jpg" class="card-img-top" alt="Síntomas 2">
-                            <div class="card-body">
+                            <img src="../img/educacion/educacion-consulta.jpg" class="card-img-top" alt="Síntomas 2">
+                            <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Cuándo consultar al médico</h5>
-                                <p class="card-text">Signos de alerta que no debes ignorar.</p>
-                                <a href="#" class="btn btn-primary">Leer más</a>
+                                <p class="card-text mb-3">Signos de alerta que no debes ignorar.</p>
+                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- Pestaña de Tratamientos -->
             <div class="tab-pane fade" id="tratamientos" role="tabpanel">
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="../img/tratamientos1.jpg" class="card-img-top" alt="Tratamientos 1">
-                            <div class="card-body">
+                            <img src="../img/educacion/educacion-tratamientos.jpg" class="card-img-top" alt="Tratamientos 1">
+                            <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Tipos de tratamientos</h5>
-                                <p class="card-text">Descubre los diferentes tratamientos disponibles para el cáncer.</p>
-                                <a href="#" class="btn btn-primary">Leer más</a>
+                                <p class="card-text mb-3">Descubre los diferentes tratamientos disponibles para el cáncer.</p>
+                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="../img/tratamientos2.jpg" class="card-img-top" alt="Tratamientos 2">
-                            <div class="card-body">
+                            <img src="../img/educacion/educacion-quimio.jpg" class="card-img-top" alt="Tratamientos 2">
+                            <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Quimioterapia</h5>
-                                <p class="card-text">Información detallada sobre la quimioterapia y sus efectos.</p>
-                                <a href="#" class="btn btn-primary">Leer más</a>
+                                <p class="card-text mb-3">Información detallada sobre la quimioterapia y sus efectos.</p>
+                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Video: Avances en tratamientos</h5>
-                                <div class="ratio ratio-16x9">
+                            <div class="card-body d-flex flex-column">
+                                <div class="ratio ratio-16x9 mb-3 mt-3">
                                     <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
                                 </div>
+                                <h5 class="card-title pt-4">Video: Avances en tratamientos</h5>
+                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
@@ -179,31 +165,32 @@ if (isset($_SESSION['rol'])) {
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="../img/estilos-vida1.jpg" class="card-img-top" alt="Estilos de Vida 1">
-                            <div class="card-body">
+                            <img src="../img/educacion/educacion-alimentacion.jpg" class="card-img-top" alt="Estilos de Vida 1">
+                            <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Alimentación saludable</h5>
-                                <p class="card-text">Consejos para una dieta que reduce el riesgo de cáncer.</p>
-                                <a href="#" class="btn btn-primary">Leer más</a>
+                                <p class="card-text mb-3">Consejos para una dieta que reduce el riesgo de cáncer.</p>
+                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="../img/estilos-vida2.jpg" class="card-img-top" alt="Estilos de Vida 2">
-                            <div class="card-body">
+                            <img src="../img/educacion/educacion-ejercicio.jpg" class="card-img-top" alt="Estilos de Vida 2">
+                            <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Ejercicio físico</h5>
-                                <p class="card-text">Cómo el ejercicio puede ayudar a prevenir el cáncer.</p>
-                                <a href="#" class="btn btn-primary">Leer más</a>
+                                <p class="card-text mb-3">Cómo el ejercicio puede ayudar a prevenir el cáncer.</p>
+                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Video: Estilos de vida saludables</h5>
-                                <div class="ratio ratio-16x9">
+                            <div class="card-body d-flex flex-column">
+                                <div class="ratio ratio-16x9 mb-3 mt-3">
                                     <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
                                 </div>
+                                <h5 class="card-title  pt-4">Video: Estilos de vida saludables</h5>
+                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>

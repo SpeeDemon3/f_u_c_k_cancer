@@ -49,7 +49,7 @@ if (isset($_SESSION['rol'])) {
                     <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/asociaciones.php">Asociaciones</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/noticias.php">Noticias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/educacion.php">Educación</a></li>
                     <li class="nav-item"><a class="nav-link" href="login/login.php" id="login">Login</a></li>
                 </ul>
             </div>
