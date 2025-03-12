@@ -51,72 +51,60 @@ if (isset($_SESSION['rol'])) {
         </div>
     </nav>
 
-
     <!-- Encabezado -->
     <header class="text-black text-center py-5">
         <div class="container">
-            <h1 class="fw-bold">Prevención del Cáncer</h1>
-            <p class="lead">Estrategias para reducir el riesgo de cáncer y mejorar tu calidad de vida.</p>
+            <h1 class="fw-bold">¿Cuándo Consultar al Médico?</h1>
+            <p class="lead">Reconoce las señales y actúa a tiempo para una mejor salud.</p>
         </div>
     </header>
 
-    <!-- Sección Principal -->
+    <!-- Sección de información -->
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6">
-                <img src="../img/educacion/reducir-riesgo.jpg" class="img-fluid rounded shadow-lg mb-4" alt="Prevención del cáncer">
+                <img src="../img/educacion/consultar-medico.jpg" class="img-fluid rounded shadow-lg" alt="Consulta médica">
             </div>
             <div class="col-md-6">
-                <h2 class="text-primary">¿Cómo reducir el riesgo de cáncer?</h2>
-                <p>El cáncer puede prevenirse en gran medida adoptando hábitos de vida saludables. Aquí tienes algunas estrategias clave:</p>
+                <h2 class="text-primary">Síntomas que requieren atención médica</h2>
+                <p>Si presentas alguno de estos síntomas durante más de dos semanas, es recomendable que consultes a un médico:</p>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong>1. Alimentación saludable:</strong> Rica en frutas, verduras y fibra.</li>
-                    <li class="list-group-item"><strong>2. Actividad física:</strong> Al menos 30 minutos de ejercicio al día.</li>
-                    <li class="list-group-item"><strong>3. Evitar el tabaco y alcohol:</strong> Factores de alto riesgo.</li>
-                    <li class="list-group-item"><strong>4. Protección solar:</strong> Reduce el riesgo de cáncer de piel.</li>
-                    <li class="list-group-item"><strong>5. Detección temprana:</strong> Chequeos médicos regulares.</li>
+                    <li class="list-group-item"><strong>✔ Pérdida de peso inexplicable</strong></li>
+                    <li class="list-group-item"><strong>✔ Fatiga extrema</strong></li>
+                    <li class="list-group-item"><strong>✔ Dolor persistente sin causa aparente</strong></li>
+                    <li class="list-group-item"><strong>✔ Cambios en la piel</strong> (manchas, lunares irregulares)</li>
+                    <li class="list-group-item"><strong>✔ Sangrados inusuales</strong> (heces, orina, tos con sangre)</li>
+                    <li class="list-group-item"><strong>✔ Bultos anormales en cualquier parte del cuerpo</strong></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Acordeón con información detallada -->
+    <!-- Preguntas Frecuentes -->
     <div class="container mt-5">
-        <h2 class="text-center text-primary mb-4">Factores de prevención en detalle</h2>
-        <div class="accordion" id="accordionPrevention">
+        <h2 class="text-center text-primary mb-4">Preguntas Frecuentes</h2>
+        <div class="accordion" id="faqConsulta">
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                        🍎 Alimentación Saludable
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        ¿Cuánto tiempo debo esperar antes de consultar?
                     </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPrevention">
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqConsulta">
                     <div class="accordion-body">
-                        Consumir frutas, verduras y granos enteros puede reducir el riesgo de cáncer. Limita carnes procesadas y grasas saturadas.
+                        Si un síntoma persiste más de dos semanas o empeora, consulta a un médico lo antes posible.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                        🏃 Ejercicio Físico
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        ¿Debo esperar a sentir dolor para consultar?
                     </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionPrevention">
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqConsulta">
                     <div class="accordion-body">
-                        Hacer ejercicio regularmente ayuda a mantener un peso saludable y reduce el riesgo de varios tipos de cáncer.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                        🏥 Detección Temprana
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionPrevention">
-                    <div class="accordion-body">
-                        Exámenes como mamografías, colonoscopias y pruebas de Papanicolaou pueden detectar el cáncer en etapas tempranas.
+                        No. El cáncer en sus primeras etapas suele ser silencioso, por lo que es importante acudir a chequeos regulares.
                     </div>
                 </div>
             </div>
@@ -125,9 +113,9 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Video Educativo -->
     <div class="container mt-5 mb-5">
-        <h2 class="text-center text-primary m-5">Video: ¿Cómo prevenir el cáncer?</h2>
+        <h2 class="text-center text-primary mb-4">Video: La Importancia de la Detección Temprana</h2>
         <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/C6FcF--8pA4" title="Prevenir el cáncer está en nuestras manos" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/33NTpSi4vQI" title="La Importancia de la Detección Temprana del Cáncer ⚕️" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -140,4 +128,3 @@ if (isset($_SESSION['rol'])) {
 </body>
 
 </html>
-
