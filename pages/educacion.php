@@ -1,3 +1,18 @@
+<?php
+session_start();
+require_once("../functions/tools.php");
+
+if (isset($_SESSION['rol'])) {
+    if ($_SESSION['rol'] == 1) {
+        echo mostrarLinkAsociacionDesdeNoticias();
+    }
+    if ($_SESSION['rol'] == 3) {
+        echo mostrarLinkAdminDesdeNoticias();
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -69,7 +84,7 @@
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Cómo prevenir el cáncer</h5>
                                 <p class="card-text mb-3">Consejos prácticos para reducir el riesgo de cáncer.</p>
-                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
+                                <a href="prevenir.php" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
