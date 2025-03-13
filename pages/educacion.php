@@ -156,7 +156,7 @@ if (isset($_SESSION['rol'])) {
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Quimioterapia</h5>
                                 <p class="card-text mb-3">Información detallada sobre la quimioterapia y sus efectos.</p>
-                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
+                                <a href="quimioterapia.php" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
@@ -182,7 +182,7 @@ if (isset($_SESSION['rol'])) {
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Alimentación saludable</h5>
                                 <p class="card-text mb-3">Consejos para una dieta que reduce el riesgo de cáncer.</p>
-                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
+                                <a href="alimentacion.php" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>

@@ -52,8 +52,8 @@ if (isset($_SESSION['rol'])) {
     </nav>
 
 
-       <!-- Encabezado -->
-       <header class="text-black text-center py-5">
+    <!-- Encabezado -->
+    <header class="text-black text-center py-5">
         <div class="container">
             <h1 class="fw-bold">Importancia de los Chequeos Médicos</h1>
             <p class="lead">Los exámenes médicos pueden salvar vidas al detectar el cáncer a tiempo.</p>

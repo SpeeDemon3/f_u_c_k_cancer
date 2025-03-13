@@ -55,58 +55,55 @@ if (isset($_SESSION['rol'])) {
     <!-- Encabezado -->
     <header class="text-black text-center py-5">
         <div class="container">
-            <h1 class="fw-bold">Tipos de Tratamientos</h1>
-            <p class="lead">Conoce las opciones para combatir el cáncer.</p>
+            <h1 class="fw-bold">Quimioterapia</h1>
+            <p class="lead">Un tratamiento clave en la lucha contra el cáncer.</p>
         </div>
     </header>
 
-    <!-- Sección de Tratamientos -->
+    <!-- Introducción -->
     <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card shadow-lg">
-                    <div class="card-body text-center">
-                        <img src="../img/educacion/tratamientos.jpg" class="img-fluid rounded mb-3" alt="Quimioterapia">
-                        <h5 class="card-title text-primary">Quimioterapia</h5>
-                        <p class="card-text">Uso de medicamentos para destruir células cancerosas en todo el cuerpo.</p>
-                    </div>
-                </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="text-primary">¿Qué es la Quimioterapia?</h2>
+                <p class="text-muted">
+                    La quimioterapia es un tratamiento que utiliza medicamentos para destruir células cancerosas. Puede usarse sola o en combinación con otros tratamientos como radioterapia o cirugía.
+                </p>
             </div>
-            <div class="col-md-4">
-                <div class="card shadow-lg">
-                    <div class="card-body text-center">
-                        <img src="../img/educacion/radio.jpg" class="pb-4 img-fluid rounded mb-3" alt="Radioterapia">
-                        <h5 class="card-title text-primary">Radioterapia</h5>
-                        <p class="card-text">Uso de radiación para eliminar o reducir tumores en zonas específicas.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-lg">
-                    <div class="card-body text-center">
-                        <img src="../img/educacion/cirugia.jpg" class="pb-3 img-fluid rounded mb-3" alt="Cirugía">
-                        <h5 class="card-title text-primary">Cirugía</h5>
-                        <p class="card-text">Procedimiento para extirpar tumores y tejido afectado.</p>
-                    </div>
-                </div>
+            <div class="col-md-6">
+                <img src="../img/educacion/quimioter.jpg" class="img-fluid rounded shadow-lg" alt="Quimioterapia">
             </div>
         </div>
     </div>
 
-    <!-- Más Tratamientos -->
+    <!-- Beneficios y Efectos Secundarios -->
     <div class="container mt-5">
+        <h2 class="text-center text-primary mb-4">Beneficios y Efectos Secundarios</h2>
         <div class="row">
             <div class="col-md-6">
-                <h2 class="text-primary">Otros Tratamientos</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong>✔ Terapia Hormonal</strong> - Bloquea hormonas que favorecen el cáncer.</li>
-                    <li class="list-group-item"><strong>✔ Inmunoterapia</strong> - Ayuda al sistema inmune a atacar células cancerosas.</li>
-                    <li class="list-group-item"><strong>✔ Terapia Dirigida</strong> - Enfoca el tratamiento en células cancerosas sin dañar células sanas.</li>
-                    <li class="list-group-item"><strong>✔ Cuidados Paliativos</strong> - Alivia síntomas y mejora la calidad de vida.</li>
-                </ul>
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Beneficios</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">✔ Elimina o reduce tumores.</li>
+                            <li class="list-group-item">✔ Previene la propagación del cáncer.</li>
+                            <li class="list-group-item">✔ Puede usarse antes o después de una cirugía.</li>
+                            <li class="list-group-item">✔ Aumenta las tasas de supervivencia.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6">
-                <img src="../img/educacion/inmuno.jpg" class="img-fluid rounded shadow-lg" alt="Inmunoterapia">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Efectos Secundarios</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">❌ Náuseas y vómitos.</li>
+                            <li class="list-group-item">❌ Pérdida de cabello.</li>
+                            <li class="list-group-item">❌ Fatiga y debilidad.</li>
+                            <li class="list-group-item">❌ Cambios en el apetito.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -114,28 +111,28 @@ if (isset($_SESSION['rol'])) {
     <!-- Preguntas Frecuentes -->
     <div class="container mt-5">
         <h2 class="text-center text-primary mb-4">Preguntas Frecuentes</h2>
-        <div class="accordion" id="faqTratamientos">
+        <div class="accordion" id="faqQuimioterapia">
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                        ¿Cuál es el tratamiento más efectivo?
+                        ¿Cómo se administra la quimioterapia?
                     </button>
                 </h2>
-                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqTratamientos">
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqQuimioterapia">
                     <div class="accordion-body">
-                        Depende del tipo de cáncer, la etapa en la que se encuentre y la respuesta del paciente. Un médico determinará la mejor opción.
+                        Se puede administrar por vía intravenosa, en pastillas o inyecciones subcutáneas, dependiendo del tipo de cáncer.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                        ¿Los tratamientos tienen efectos secundarios?
+                        ¿Cuánto dura el tratamiento?
                     </button>
                 </h2>
-                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqTratamientos">
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqQuimioterapia">
                     <div class="accordion-body">
-                        Sí, pero varían según el tipo de tratamiento. Es importante discutir con el médico los efectos secundarios posibles.
+                        La duración depende del tipo de cáncer y la respuesta del paciente, pero generalmente varía de semanas a meses en ciclos intercalados.
                     </div>
                 </div>
             </div>
@@ -143,10 +140,10 @@ if (isset($_SESSION['rol'])) {
     </div>
 
     <!-- Video Educativo -->
-    <div class="container mt-5  mb-5">
-        <h2 class="text-center text-primary mb-4">Video: Opciones de Tratamiento</h2>
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center text-primary mb-5">Video: ¿Cómo Funciona la Quimioterapia?</h2>
         <div class="ratio ratio-16x9">
-        <iframe width="1158" height="651" src="https://www.youtube.com/embed/6JnYM51Z8XA" title="¿Qué opciones de tratamiento existen para el cáncer?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+        <iframe width="1158" height="651" src="https://www.youtube.com/embed/_se6R9yJrmw" title="Combatiendo el cáncer: ¿Qué es y cómo funciona la quimioterapia?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
     </div>
 
     <!-- Pie de página -->
