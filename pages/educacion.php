@@ -101,10 +101,10 @@ if (isset($_SESSION['rol'])) {
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
                             <div class="card-body d-flex flex-column">
-                                <div class="ratio ratio-16x9  mb-3 mt-3">
+                                <div class="ratio ratio-16x9 py-4">
                                     <iframe src="https://www.youtube.com/embed/Y0BPGlqwI-E" title="3 CLAVES para ENTENDER el CÁNCER" allowfullscreen></iframe>
                                 </div>
-                                <h5 class="card-title pt-4">Video: 3 CLAVES para ENTENDER el CÁNCER</h5>
+                                <h5 class="card-title pt-2">Video: 3 CLAVES para ENTENDER el CÁNCER</h5>
                             </div>
                         </div>
                     </div>
@@ -163,10 +163,10 @@ if (isset($_SESSION['rol'])) {
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
                             <div class="card-body d-flex flex-column">
-                                <div class="ratio ratio-16x9 mb-3 mt-3">
+                                <div class="ratio ratio-16x9 py-4">
                                     <iframe src="https://www.youtube.com/embed/aRxnGyiH7KM" title="Top 5 avances en la detección y tratamiento del cáncer - #EspecialMSP" allowfullscreen></iframe>
                                 </div>
-                                <h5 class="card-title pt-4">Video: Top 5 avances en la detección y tratamiento del cáncer</h5>
+                                <h5 class="card-title pt-2">Video: Top 5 avances en la detección y tratamiento del cáncer</h5>
                             </div>
                         </div>
                     </div>
@@ -199,10 +199,10 @@ if (isset($_SESSION['rol'])) {
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
                             <div class="card-body d-flex flex-column">
-                                <div class="ratio ratio-16x9 mb-3 mt-3">
+                                <div class="ratio ratio-16x9 py-4">
                                     <iframe src="https://www.youtube.com/embed/AtJ844kIczE" title="ESTILOS DE VIDA SALUDABLE, PREVENCIÓN DEL CÁNCER Y SUPERVIVENCIA TRAS SUFRIR UN CÁNCER" allowfullscreen></iframe>
                                 </div>
-                                <h5 class="card-title  pt-4">Video: ESTILOS DE VIDA SALUDABLE, PREVENCIÓN DEL CÁNCER Y SUPERVIVENCIA TRAS SUFRIR UN CÁNCER</h5>
+                                <h5 class="card-title  pt-2">Video: ESTILOS DE VIDA SALUDABLE, PREVENCIÓN DEL CÁNCER Y SUPERVIVENCIA TRAS SUFRIR UN CÁNCER</h5>
                             </div>
                         </div>
                     </div>
