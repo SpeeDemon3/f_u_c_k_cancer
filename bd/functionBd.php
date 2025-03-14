@@ -578,7 +578,7 @@ function mostrarUltimasAsociaciones()
                             <div class="card-body">
                                 <h5 class="card-title">' . htmlspecialchars($nombre_asociacion) . '</h5>
                                 <p class="card-text">' . htmlspecialchars($contenido_limitado) . '</p>
-                                <a href="#" class="btn btn-primary">Ver más</a>
+                                <a href="pages/asociaciones.php" class="btn btn-primary">Ver más</a>
                             </div>
                         </div>
                     </div>

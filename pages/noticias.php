@@ -64,7 +64,7 @@ try {
     <!-- Barra de navegación -->
     <nav id="nav-principal" class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="../index.php">
                 <img src="../img/logo-web.jpg" alt="Logo" class="me-2"> 
                 <span>Unidos Contra el Cáncer</span>
             </a>

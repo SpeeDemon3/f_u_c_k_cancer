@@ -20,7 +20,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Asociación</title>
+    <title>Registrar Asociación - Unidos Contra el Cáncer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/validateFormAssociation.js" defer></script>
@@ -30,7 +30,7 @@
     <!-- Barra de navegación -->
     <nav id="nav-principal" class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="../index.php">
                 <img src="../img/logo-web.jpg" alt="Logo" class="me-2"> 
                 <span>Unidos Contra el Cáncer</span>
             </a>
