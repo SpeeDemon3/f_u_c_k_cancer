@@ -140,10 +140,13 @@ if (isset($_SESSION['rol'])) {
     </div>
 
     <!-- Video Educativo -->
-    <div class="container mt-5 mb-5">
-        <h2 class="text-center text-primary mb-5">Video: ¿Cómo Funciona la Quimioterapia?</h2>
-        <div class="ratio ratio-16x9">
-        <iframe width="1158" height="651" src="https://www.youtube.com/embed/_se6R9yJrmw" title="Combatiendo el cáncer: ¿Qué es y cómo funciona la quimioterapia?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+    <div class="container mt-5 mb-5 text-center">
+        <h2 class="text-center text-primary mb-4">Video: ¿Cómo Funciona la Quimioterapia?</h2>
+        <div class="d-flex justify-content-center mt-5">
+            <div class="ratio ratio-16x9" style="max-width: 900px;">
+                <iframe  src="https://www.youtube.com/embed/_se6R9yJrmw" title="Combatiendo el cáncer: ¿Qué es y cómo funciona la quimioterapia?" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 
     <!-- Pie de página -->

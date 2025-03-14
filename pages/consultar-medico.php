@@ -112,12 +112,16 @@ if (isset($_SESSION['rol'])) {
     </div>
 
     <!-- Video Educativo -->
-    <div class="container mt-5 mb-5">
-        <h2 class="text-center text-primary mb-4">Video: La Importancia de la Detección Temprana</h2>
-        <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/33NTpSi4vQI" title="La Importancia de la Detección Temprana del Cáncer ⚕️" allowfullscreen></iframe>
+    <div class="container mt-5 mb-5 text-center">
+        <h2 class="text-center text-primary mb-4">Video: La Importancia de la Detección Temprana del Cáncer</h2>
+        <div class="d-flex justify-content-center mt-5">
+            <div class="ratio ratio-16x9" style="max-width: 900px;">
+                <iframe  src="https://www.youtube.com/embed/33NTpSi4vQI" title="La Importancia de la Detección Temprana del Cáncer ⚕️" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
+
+    
 
     <!-- Pie de página -->
     <footer id="footer-principal" class="text-white text-center py-4 mt-auto">

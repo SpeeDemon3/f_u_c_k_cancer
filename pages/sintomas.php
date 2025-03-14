@@ -149,10 +149,12 @@ if (isset($_SESSION['rol'])) {
     </div>
 
     <!-- Video Educativo -->
-    <div class="container mt-5  mb-5">
+    <div class="container mt-5 mb-5 text-center">
         <h2 class="text-center text-primary mb-4">Video: Signos de Alerta del Cáncer</h2>
-        <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/bYCcXcIZDCc" title="🛑¿CUÁLES SON LOS SÍNTOMAS DEL CÁNCER?" allowfullscreen></iframe>
+        <div class="d-flex justify-content-center mt-5">
+            <div class="ratio ratio-16x9" style="max-width: 900px;">
+                <iframe  src="https://www.youtube.com/embed/bYCcXcIZDCc" title="🛑¿CUÁLES SON LOS SÍNTOMAS DEL CÁNCER?" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 
