@@ -57,7 +57,7 @@
                     <li class="nav-item"><a class="nav-link" href="../../index.php">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="../../pages/asociaciones.php">Asociaciones</a></li>
                     <li class="nav-item"><a class="nav-link" href="../../pages/noticias.php">Noticias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../pages/educacion.php">Educación</a></li>
                     <li class="nav-item"><a class="nav-link btn btn-danger text-white" href="../logout.php">Salir</a></li>
                 </ul>
             </div>
