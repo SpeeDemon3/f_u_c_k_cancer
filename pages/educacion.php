@@ -134,6 +134,16 @@ if (isset($_SESSION['rol'])) {
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="ratio ratio-16x9 py-4">
+                                    <iframe src="https://www.youtube.com/embed/5pk11p8vZEY" title="12 síntomas para detectar el cáncer de mama, el más común entre las mujeres" allowfullscreen></iframe>
+                                </div>
+                                <h5 class="card-title pt-2">Video: 12 síntomas para detectar el cáncer de mama</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -192,7 +202,7 @@ if (isset($_SESSION['rol'])) {
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Ejercicio físico</h5>
                                 <p class="card-text mb-3">Cómo el ejercicio puede ayudar a prevenir el cáncer.</p>
-                                <a href="#" class="btn btn-primary mt-auto btn-custom">Leer más</a>
+                                <a href="ejercicio.php" class="btn btn-primary mt-auto btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
