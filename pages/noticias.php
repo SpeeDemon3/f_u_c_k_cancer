@@ -104,11 +104,13 @@ try {
             ?>
 <div class="col-md-4 mb-3">
     <div class="card h-100 d-flex flex-column shadow-sm">
-        <img src="../<?= htmlspecialchars($row["imagen_url"]) ?>" class="card-img-top fixed-img" alt="Noticia">
+        <img src="../<?= htmlspecialchars($row["imagen_url"]) ?>" class="card-img-top fixed-img" height="300px" alt="Noticia">
         <div class="card-body d-flex flex-column">
             <h5 class="card-title"><?= htmlspecialchars($row["titulo"]) ?></h5>
             <p class="card-text flex-grow-1"><?= $contenido_limitado ?></p>
+            <div class="d-flex justify-content-center gap-2">
             <a href="../<?= htmlspecialchars($row["ruta_pagina"]) ?>" class="btn btn-primary mt-auto">Leer más</a>
+            </div>
         </div>
     </div>
 </div>
