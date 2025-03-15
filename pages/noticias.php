@@ -92,7 +92,7 @@ try {
             <img src="../img/sec_noticias.jpg" class="img-fluid img-thumbnail rounded m-5 text-center" alt="Seccion de noticias, imagen de un medico">
         </div>
 
-        <h2 class="text-center mb-4 mt-4">Últimas Noticias</h2>
+        <h2 class="text-center mb-4 mt-4 fs-1 fw-semibold font-monospace" style="color: #aa84de;">Últimas Noticias</h2>
 
         <!-- Sección de Noticias -->
         <div class="row">
@@ -109,7 +109,7 @@ try {
             <h5 class="card-title"><?= htmlspecialchars($row["titulo"]) ?></h5>
             <p class="card-text flex-grow-1"><?= $contenido_limitado ?></p>
             <div class="d-flex justify-content-center gap-2">
-            <a href="../<?= htmlspecialchars($row["ruta_pagina"]) ?>" class="btn btn-primary mt-auto">Leer más</a>
+            <a href="../<?= htmlspecialchars($row["ruta_pagina"]) ?>" class="btn btn-primary mt-auto btn-custom">Leer más</a>
             </div>
         </div>
     </div>

@@ -59,8 +59,8 @@ if (isset($_SESSION['rol'])) {
     <!-- Sección principal -->
     <header class="bg-light text-center py-5">
         <div class="container">
-            <h1 class="display-4">Información, Educación y Esperanza</h1>
-            <p class="lead">Encuentra información fiable y conoce asociaciones que trabajan para combatir el cáncer.</p>
+            <h1 class="display-4" style="color:rgb(88, 34, 162);">Información, Educación y Esperanza</h1>
+            <p class="lead" style="color:rgb(181, 162, 206) ">Encuentra información fiable y conoce asociaciones que trabajan para combatir el cáncer.</p>
             <a href="pages/registrar_asociacion.php" id="btn-registrar" class="btn btn-primary btn-lg">Registra tu asociación</a>
         </div>
     </header>
@@ -68,7 +68,7 @@ if (isset($_SESSION['rol'])) {
     <main class="flex-grow-1">
         <!-- Sección de Asociaciones -->
         <section class="container my-5">
-            <h2 class="text-center mb-4">Asociaciones Destacadas</h2>
+            <h2 class="text-center mb-4" style="color: #aa84de;">Asociaciones Destacadas</h2>
             <div class="row">
                 <?php mostrarUltimasAsociaciones() ?>
             </div>
@@ -78,7 +78,7 @@ if (isset($_SESSION['rol'])) {
         <!-- Sección de Noticias -->
         <section class="bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-4 py-5">Últimas Noticias</h2>
+            <h2 class="text-center mb-4 py-5 font-monospace" style="color: #aa84de;">Últimas Noticias</h2>
             <div class="row justify-content-center">
                 <?php getLastTwoNews(); ?>
             </div>

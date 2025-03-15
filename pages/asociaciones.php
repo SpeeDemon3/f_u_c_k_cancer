@@ -60,7 +60,7 @@
         <div class="text-center m-4">
             <img src="../img/asociacones/portada-asociacion.jpg" class="img-fluid rounded" alt="Portada asociaciones, manos unidas en contra del cancer." id="portada-asociacion">
         </div>
-        <h1 class="text-center mb-4">Asociaciones Colaboradoras</h1>
+        <h1 class="text-center mb-4" style="color: #aa84de;">Asociaciones Colaboradoras</h1>
         <div class="row">
             <div class="table-responsive"> <!-- Contenedor responsive -->
                 <!-- Muestro todas las asociaciones disponibles -->

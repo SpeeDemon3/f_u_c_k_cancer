@@ -105,16 +105,16 @@
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul class="navbar-nav" id="list-ul-nav">
                                 <li class="nav-item"><a class="nav-link" href="../../index.php">Inicio</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Asociaciones</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../asociaciones.php">Asociaciones</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../noticias.php">Noticias</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Educación</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../educacion.php">Educación</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
 
                 <main class="container my-5">
-                    <h1 class="text-center mb-4">$titulo</h1>
+                    <h1 class="text-center mb-4 font-monospace"  style="color:rgb(88, 34, 162);">$titulo</h1>
                     <div class="text-center mb-4">
                         <img src="../../$ruta_imagen_db" alt="$titulo" class="web-noticia-imagen img-fluid web-noticia-imagen" style="max-width: 100%; height: auto; border-radius: 10px;">
                     </div>

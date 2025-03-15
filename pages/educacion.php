@@ -52,8 +52,8 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Encabezado -->
     <div class="container mt-4">
-        <h1 class="text-center mb-4">Educación sobre el Cáncer</h1>
-        <p class="text-center lead">Encuentra información confiable y recursos útiles para aprender más sobre prevención, síntomas y tratamientos.</p>
+        <h1 class="text-center mb-4" style="color:rgb(122, 21, 253);">Educación sobre el Cáncer</h1>
+        <p class="text-center lead" style="color:rgb(181, 162, 206)">Encuentra información confiable y recursos útiles para aprender más sobre prevención, síntomas y tratamientos.</p>
     </div>
 
     <!-- Navegación por categorías (pestañas) -->

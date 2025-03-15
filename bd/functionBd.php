@@ -547,7 +547,7 @@ function getLastTwoNews() {
                             <p class="card-text text-center">' . $contenido_limitado . '</p>
                             <p class="text-center">' . htmlspecialchars($row["fecha_publicacion"]) . '</p>
                             <div class="d-flex justify-content-center gap-2">
-                                <a href="' . htmlspecialchars($row["ruta_pagina"]) . '" class="btn btn-primary">Leer más</a>
+                                <a href="' . htmlspecialchars($row["ruta_pagina"]) . '" class="btn btn-primary btn-custom">Leer más</a>
                             </div>
                         </div>
                     </div>
@@ -583,7 +583,7 @@ function mostrarUltimasAsociaciones()
                             <h5 class="card-title">' . htmlspecialchars($nombre_asociacion) . '</h5>
                             <p class="card-text flex-grow-1">' . htmlspecialchars($contenido_limitado) . '</p>
                             <div class="text-start">
-                                <a href="pages/asociaciones.php" class="btn btn-primary btn-sm">Ver más</a>
+                                <a href="pages/asociaciones.php" class="btn btn-primary btn-sm py-2 mt-auto btn-custom">Ver más</a>
                             </div>
                         </div>
                     </div>
