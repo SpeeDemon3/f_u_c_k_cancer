@@ -125,7 +125,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Video Educativo -->
     <div class="container mt-5 mb-5 text-center">
-        <h2 class="text-center text-primary mb-4">Video: Alimentación Saludable Durante La Quimioterapia</h2>
+        <h2 class="text-center text-primary mb-4">Video: Prevenir el cáncer está en nuestras manos</h2>
         <div class="d-flex justify-content-center mt-5">
             <div class="ratio ratio-16x9" style="max-width: 900px;">
                 <iframe  src="https://www.youtube.com/embed/C6FcF--8pA4" title="Prevenir el cáncer está en nuestras manos" allowfullscreen></iframe>

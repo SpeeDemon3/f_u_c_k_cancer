@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS education (
 INSERT INTO users (nombre, email, pass, rol) VALUES
 ('Admin', 'admin@gmail.com', 'Password12345!6', 3), /*Rol Admin*/
 ('Asociación Española Contra el Cáncer', 'aContraelCancer@gamil.com', 'Password12345!6', 1),
-('Asociación de Pacientes Oncológicos', 'contacto@pacientesonco.org', 'Password12345!613', 1),
+('Asociación de Pacientes Oncológicos', 'contacto@pacientesonco.org', 'Password12345!6', 1),
 ('criscancer', 'criscancer@gmail.org', 'Password12345!613', 1);
 
 

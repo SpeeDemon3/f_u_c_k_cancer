@@ -556,7 +556,74 @@ function getLastTwoNews() {
 
 }
 
+/**
+ * Metodo para mostrar las ultimas 3 asociaciones registradas
+ */
 function mostrarUltimasAsociaciones()
+{
+    // Consulta para obtener las 3 últimas asociaciones
+    $query = "SELECT * FROM associations ORDER BY nombre_asociacion DESC LIMIT 3";
+    $result = mysqli_query($GLOBALS['con'], $query) or die("Error en la consulta");
+
+    if (mysqli_num_rows($result) > 0) {
+        while ($row = mysqli_fetch_array($result)) {
+            extract($row);
+
+            // Limitar el contenido a 100 caracteres
+            $contenido = htmlspecialchars($descripcion);
+            $contenido_limitado = strlen($contenido) > 100 ? substr($contenido, 0, 100) . '...' : $contenido;
+
+            echo '<div class="col-md-4 col-sm-12 mb-3">
+                    <div class="card h-100 d-flex flex-column">
+                        <img src="' . htmlspecialchars($logo) . '" class="card-img-top" alt="Asociación ' . htmlspecialchars($nombre_asociacion) . '">
+                        <div class="card-body flex-grow-1 d-flex flex-column">
+                            <h5 class="card-title">' . htmlspecialchars($nombre_asociacion) . '</h5>
+                            <p class="card-text flex-grow-1">' . htmlspecialchars($contenido_limitado) . '</p>
+                            <div class="text-start">
+                                <a href="pages/asociaciones.php" class="btn btn-primary btn-sm">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>';
+        }
+    } else {
+        echo "<p style='text-align: center;'>No hay asociaciones disponibles en este momento.</p>";
+    }
+}
+
+
+function mostrarUltimasAsociaciones2()
+{
+    // Consulta para obtener las 3 últimas asociaciones
+    $query = "SELECT * FROM associations ORDER BY nombre_asociacion DESC LIMIT 3";
+    $result = mysqli_query($GLOBALS['con'], $query) or die("Error en la consulta");
+
+    if (mysqli_num_rows($result) > 0) {
+        while ($row = mysqli_fetch_array($result)) {
+            extract($row);
+
+            // Limitar el contenido a 100 caracteres
+            $contenido = htmlspecialchars($descripcion);
+            $contenido_limitado = strlen($contenido) > 100 ? substr($contenido, 0, 100) . '...' : $contenido;
+
+            echo '<div class="col-md-4 col-sm-12 mb-3">
+                    <div class="card h-100 d-flex flex-column">
+                        <img src="' . htmlspecialchars($logo) . '" class="card-img-top" alt="Asociación ' . htmlspecialchars($nombre_asociacion) . '">
+                        <div class="card-body flex-grow-1 d-flex flex-column">
+                            <h5 class="card-title">' . htmlspecialchars($nombre_asociacion) . '</h5>
+                            <p class="card-text flex-grow-1">' . htmlspecialchars($contenido_limitado) . '</p>
+                            <a href="pages/asociaciones.php" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>';
+        }
+    } else {
+        echo "<p style='text-align: center;'>No hay asociaciones disponibles en este momento.</p>";
+    }
+}
+
+
+function mostrarUltimasAsociaciones1()
 {
 
     // Consulta para obtener las 3 últimas asociaciones
@@ -582,7 +649,7 @@ function mostrarUltimasAsociaciones()
                             </div>
                         </div>
                     </div>
-                    ';
+                ';
         }
     } else {
         echo "<p style='text-align: center;'>No hay asociaciones disponibles en este momento.</p>";

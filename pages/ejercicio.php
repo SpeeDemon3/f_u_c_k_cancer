@@ -121,7 +121,7 @@ if (isset($_SESSION['rol'])) {
     <div class="container mt-5 mb-5 text-center">
         <h2 class="text-center text-primary mb-4">Video: Así previene el ejercicio físico los tumores</h2>
         <div class="d-flex justify-content-center">
-            <div class="ratio ratio-16x9" style="max-width: 600px;">
+            <div class="ratio ratio-16x9" style="max-width: 900px;">
                 <iframe src="https://www.youtube.com/embed/plli5wvE-iI" title="La &quot;pastilla&quot; real contra el cáncer: así previene el ejercicio físico los tumores" allowfullscreen></iframe>
             </div>
         </div>
