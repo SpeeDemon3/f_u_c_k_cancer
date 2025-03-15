@@ -55,8 +55,8 @@ if (isset($_SESSION['rol'])) {
     <!-- Encabezado -->
     <header class="text-black text-center py-5">
         <div class="container">
-            <h1 class="fw-bold">Tipos de Tratamientos</h1>
-            <p class="lead">Conoce las opciones para combatir el cáncer.</p>
+            <h1 class="fw-bold" style="color:rgba(82, 14, 170, 0.9)">Tipos de Tratamientos</h1>
+            <p class="lead" style="color: grey">Conoce las opciones para combatir el cáncer.</p>
         </div>
     </header>
 
@@ -67,7 +67,7 @@ if (isset($_SESSION['rol'])) {
                 <div class="card shadow-lg">
                     <div class="card-body text-center">
                         <img src="../img/educacion/tratamientos.jpg" class="img-fluid rounded mb-3" alt="Quimioterapia">
-                        <h5 class="card-title text-primary">Quimioterapia</h5>
+                        <h5 class="card-title" style="color:rgb(175, 159, 199)">Quimioterapia</h5>
                         <p class="card-text">Uso de medicamentos para destruir células cancerosas en todo el cuerpo.</p>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ if (isset($_SESSION['rol'])) {
                 <div class="card shadow-lg">
                     <div class="card-body text-center">
                         <img src="../img/educacion/radio.jpg" class="pb-4 img-fluid rounded mb-3" alt="Radioterapia">
-                        <h5 class="card-title text-primary">Radioterapia</h5>
+                        <h5 class="card-title" style="color:rgb(175, 159, 199)">Radioterapia</h5>
                         <p class="card-text">Uso de radiación para eliminar o reducir tumores en zonas específicas.</p>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ if (isset($_SESSION['rol'])) {
                 <div class="card shadow-lg">
                     <div class="card-body text-center">
                         <img src="../img/educacion/cirugia.jpg" class="pb-3 img-fluid rounded mb-3" alt="Cirugía">
-                        <h5 class="card-title text-primary">Cirugía</h5>
+                        <h5 class="card-title" style="color:rgb(175, 159, 199)">Cirugía</h5>
                         <p class="card-text">Procedimiento para extirpar tumores y tejido afectado.</p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ if (isset($_SESSION['rol'])) {
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6">
-                <h2 class="text-primary">Otros Tratamientos</h2>
+                <h2 style="color:rgb(125, 87, 175)">Otros Tratamientos</h2>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><strong>✔ Terapia Hormonal</strong> - Bloquea hormonas que favorecen el cáncer.</li>
                     <li class="list-group-item"><strong>✔ Inmunoterapia</strong> - Ayuda al sistema inmune a atacar células cancerosas.</li>
@@ -113,7 +113,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Preguntas Frecuentes -->
     <div class="container mt-5">
-        <h2 class="text-center text-primary mb-4">Preguntas Frecuentes</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Preguntas Frecuentes</h2>
         <div class="accordion" id="faqTratamientos">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -144,7 +144,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Video Educativo -->
     <div class="container mt-5 mb-5 text-center">
-        <h2 class="text-center text-primary mb-4">Video: Opciones de Tratamiento</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Video: Opciones de Tratamiento</h2>
         <div class="d-flex justify-content-center mt-5">
             <div class="ratio ratio-16x9" style="max-width: 900px;">
                 <iframe  src="https://www.youtube.com/embed/6JnYM51Z8XA" title="¿Qué opciones de tratamiento existen para el cáncer?" allowfullscreen></iframe>

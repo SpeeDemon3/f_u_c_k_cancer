@@ -44,7 +44,6 @@ try {
     $stmt->bindParam(':limit', $noticias_por_pagina, PDO::PARAM_INT);
     $stmt->bindParam(':offset', $offset, PDO::PARAM_INT);
     $stmt->execute();
-
 } catch (PDOException $e) {
     die("<p class='text-danger text-center'>Error al conectar con la base de datos: " . $e->getMessage() . "</p>");
 }
@@ -52,6 +51,7 @@ try {
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,13 +59,14 @@ try {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body class="bg-light d-flex flex-column min-vh-100">
 
     <!-- Barra de navegación -->
     <nav id="nav-principal" class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="../index.php">
-                <img src="../img/logo-web.jpg" alt="Logo" class="me-2"> 
+                <img src="../img/logo-web.jpg" alt="Logo" class="me-2">
                 <span>Unidos Contra el Cáncer</span>
             </a>
 
@@ -92,25 +93,26 @@ try {
         </div>
 
         <h2 class="text-center mb-4 mt-4">Últimas Noticias</h2>
-        
+
         <!-- Sección de Noticias -->
         <div class="row">
             <?php
-                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                    // Limitar contenido a 200 caracteres
-                    $contenido = htmlspecialchars($row["contenido"]);
-                    $contenido_limitado = strlen($contenido) > 200 ? substr($contenido, 0, 350) . '...' : $contenido;
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                // Limitar contenido a 200 caracteres
+                $contenido = htmlspecialchars($row["contenido"]);
+                $contenido_limitado = strlen($contenido) > 200 ? substr($contenido, 0, 350) . '...' : $contenido;
             ?>
-                    <div class="col-md-4 mb-3">
-                        <div class="card shadow-sm">
-                            <img src="../<?= htmlspecialchars($row["imagen_url"]) ?>" class="card-img-top" alt="Noticia">
-                            <div class="card-body">
-                                <h5 class="card-title"><?= htmlspecialchars($row["titulo"]) ?></h5>
-                                <p class="card-text"><?= $contenido_limitado ?></p>
-                                <a href="../<?= htmlspecialchars($row["ruta_pagina"]) ?>" class="btn btn-primary" target="_blank">Leer más</a>
-                            </div>
-                        </div>
-                    </div>
+<div class="col-md-4 mb-3">
+    <div class="card h-100 d-flex flex-column shadow-sm">
+        <img src="../<?= htmlspecialchars($row["imagen_url"]) ?>" class="card-img-top fixed-img" alt="Noticia">
+        <div class="card-body d-flex flex-column">
+            <h5 class="card-title"><?= htmlspecialchars($row["titulo"]) ?></h5>
+            <p class="card-text flex-grow-1"><?= $contenido_limitado ?></p>
+            <a href="../<?= htmlspecialchars($row["ruta_pagina"]) ?>" class="btn btn-primary mt-auto">Leer más</a>
+        </div>
+    </div>
+</div>
+
             <?php } ?>
         </div>
 
@@ -150,4 +152,5 @@ try {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

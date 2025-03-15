@@ -48,7 +48,7 @@
                     <li class="nav-item"><a class="nav-link" href="../index.php">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="educacion.php">Asociaciones</a></li>
                     <li class="nav-item"><a class="nav-link" href="noticias.php">Noticias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="educacion.php">Educación</a></li>
                     <li class="nav-item"><a class="nav-link" href="../login/login.php" id="login">Login</a></li>
                 </ul>
             </div>

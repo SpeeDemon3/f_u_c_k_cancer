@@ -60,16 +60,16 @@ if (isset($_SESSION['rol'])) {
     <div class="container mt-4">
         <ul class="nav nav-tabs justify-content-center" id="educacionTabs" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="prevencion-tab" data-bs-toggle="tab" data-bs-target="#prevencion" type="button" role="tab">Prevención</button>
+                <button class="nav-link active" id="prevencion-tab" data-bs-toggle="tab" data-bs-target="#prevencion" type="button" role="tab" style="color: #6b00fb">Prevención</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="sintomas-tab" data-bs-toggle="tab" data-bs-target="#sintomas" type="button" role="tab">Síntomas</button>
+                <button class="nav-link" id="sintomas-tab" data-bs-toggle="tab" data-bs-target="#sintomas" type="button" role="tab" style="color: #6b00fb">Síntomas</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tratamientos-tab" data-bs-toggle="tab" data-bs-target="#tratamientos" type="button" role="tab">Tratamientos</button>
+                <button class="nav-link" id="tratamientos-tab" data-bs-toggle="tab" data-bs-target="#tratamientos" type="button" role="tab" style="color: #6b00fb">Tratamientos</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="estilos-vida-tab" data-bs-toggle="tab" data-bs-target="#estilos-vida" type="button" role="tab">Estilos de Vida</button>
+                <button class="nav-link" id="estilos-vida-tab" data-bs-toggle="tab" data-bs-target="#estilos-vida" type="button" role="tab" style="color: #6b00fb">Estilos de Vida</button>
             </li>
         </ul>
 

@@ -165,3 +165,9 @@ body {
     color: rgb(243, 242, 242);
 }
 
+/* Tamaño fijo para las imagenes de las noticias */
+.fixed-img {
+    height: 200px; /* Ajusta la altura según tu diseño */
+    width: 100%; 
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+}

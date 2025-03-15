@@ -55,8 +55,8 @@ if (isset($_SESSION['rol'])) {
     <!-- Encabezado -->
     <header class="text-black text-center py-5">
         <div class="container">
-            <h1 class="fw-bold">Quimioterapia</h1>
-            <p class="lead">Un tratamiento clave en la lucha contra el cáncer.</p>
+            <h1 class="fw-bold" style="color:rgba(82, 14, 170, 0.9)">Quimioterapia</h1>
+            <p class="lead" style="color: grey">Un tratamiento clave en la lucha contra el cáncer.</p>
         </div>
     </header>
 
@@ -64,7 +64,7 @@ if (isset($_SESSION['rol'])) {
     <div class="container mt-5">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <h2 class="text-primary">¿Qué es la Quimioterapia?</h2>
+                <h2 style="color:rgb(125, 87, 175)">¿Qué es la Quimioterapia?</h2>
                 <p class="text-muted">
                     La quimioterapia es un tratamiento que utiliza medicamentos para destruir células cancerosas. Puede usarse sola o en combinación con otros tratamientos como radioterapia o cirugía.
                 </p>
@@ -77,7 +77,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Beneficios y Efectos Secundarios -->
     <div class="container mt-5">
-        <h2 class="text-center text-primary mb-4">Beneficios y Efectos Secundarios</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Beneficios y Efectos Secundarios</h2>
         <div class="row">
             <div class="col-md-6">
                 <div class="card shadow-lg">
@@ -110,7 +110,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Preguntas Frecuentes -->
     <div class="container mt-5">
-        <h2 class="text-center text-primary mb-4">Preguntas Frecuentes</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Preguntas Frecuentes</h2>
         <div class="accordion" id="faqQuimioterapia">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -141,7 +141,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Video Educativo -->
     <div class="container mt-5 mb-5 text-center">
-        <h2 class="text-center text-primary mb-4">Video: ¿Cómo Funciona la Quimioterapia?</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Video: ¿Cómo Funciona la Quimioterapia?</h2>
         <div class="d-flex justify-content-center mt-5">
             <div class="ratio ratio-16x9" style="max-width: 900px;">
                 <iframe  src="https://www.youtube.com/embed/_se6R9yJrmw" title="Combatiendo el cáncer: ¿Qué es y cómo funciona la quimioterapia?" allowfullscreen></iframe>

@@ -48,8 +48,8 @@ if (isset($_SESSION['rol'])) {
 
     <header class="text-black text-center py-5">
         <div class="container">
-            <h1 class="fw-bold">Alimentación Saludable y Prevención del Cáncer</h1>
-            <p class="lead">Una dieta equilibrada puede reducir el riesgo de desarrollar cáncer.</p>
+            <h1 class="fw-bold" style="color:rgba(82, 14, 170, 0.9)">Alimentación Saludable y Prevención del Cáncer</h1>
+            <p class="lead" style="color: grey">Una dieta equilibrada puede reducir el riesgo de desarrollar cáncer.</p>
         </div>
     </header>
 
@@ -59,7 +59,7 @@ if (isset($_SESSION['rol'])) {
                 <img src="../img/educacion/alimentacion-sal.jpg" class="img-fluid rounded shadow-lg" alt="Alimentación Saludable">
             </div>
             <div class="col-md-6">
-                <h2 class="text-primary">¿Cómo influye la alimentación en la prevención?</h2>
+                <h2 style="color:rgb(125, 87, 175)">¿Cómo influye la alimentación en la prevención?</h2>
                 <p>Una dieta rica en frutas, verduras y fibra puede reducir el riesgo de varios tipos de cáncer. Evitar el consumo excesivo de azúcares y grasas procesadas también es clave.</p>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><strong>✔ Antioxidantes:</strong> Reducen el daño celular.</li>
@@ -72,7 +72,7 @@ if (isset($_SESSION['rol'])) {
     </div>
 
     <div class="container mt-5">
-        <h2 class="text-center text-primary mb-4">Alimentos Claves en la Prevención del Cáncer</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Alimentos Claves en la Prevención del Cáncer</h2>
         <div class="accordion" id="accordionFood">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -114,7 +114,7 @@ if (isset($_SESSION['rol'])) {
     </div>
 
     <div class="container mt-5 mb-5 text-center">
-        <h2 class="text-center text-primary mb-4">Video: Alimentación Saludable Durante La Quimioterapia</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Video: Alimentación Saludable Durante La Quimioterapia</h2>
         <div class="d-flex justify-content-center mt-5">
             <div class="ratio ratio-16x9" style="max-width: 900px;">
                 <iframe src="https://www.youtube.com/embed/hCugiUboAYo" title="CONVIVIENDO CON EL CÁNCER | Alimentación durante la Quimioterapia" allowfullscreen></iframe>

@@ -54,8 +54,8 @@ if (isset($_SESSION['rol'])) {
     <!-- Encabezado -->
     <header class="text-black text-center py-5">
         <div class="container">
-            <h1 class="fw-bold">Síntomas Comunes del Cáncer</h1>
-            <p class="lead">Conocer los síntomas puede ayudarte a detectarlo a tiempo.</p>
+            <h1 class="fw-bold" style="color:rgba(82, 14, 170, 0.9)">Síntomas Comunes del Cáncer</h1>
+            <p class="lead" style="color: grey">Conocer los síntomas puede ayudarte a detectarlo a tiempo.</p>
         </div>
     </header>
 
@@ -66,7 +66,7 @@ if (isset($_SESSION['rol'])) {
                 <img src="../img/educacion/sintomas.jpg" class="img-fluid rounded shadow-lg" alt="Síntomas del cáncer">
             </div>
             <div class="col-md-6">
-                <h2 class="text-primary">¿Cuáles son los síntomas comunes?</h2>
+                <h2 style="color:rgb(125, 87, 175)">¿Cuáles son los síntomas comunes?</h2>
                 <p>Los síntomas del cáncer varían según el tipo, pero algunos signos generales pueden alertarte para buscar atención médica.</p>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><strong>✔ Pérdida de peso inexplicada:</strong> Sin cambios en dieta o ejercicio.</li>
@@ -82,7 +82,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Tabla de síntomas según tipo de cáncer -->
     <div class="container mt-5">
-        <h2 class="text-center text-primary mb-4">Síntomas por Tipo de Cáncer</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Síntomas por Tipo de Cáncer</h2>
         <div class="table-responsive">
             <table class="table table-bordered table-striped">
                 <thead class="table-primary">
@@ -119,7 +119,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Acordeón de preguntas frecuentes -->
     <div class="container mt-5">
-        <h2 class="text-center text-primary mb-4">Preguntas Frecuentes</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Preguntas Frecuentes</h2>
         <div class="accordion" id="faqSintomas">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -150,7 +150,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Video Educativo -->
     <div class="container mt-5 mb-5 text-center">
-        <h2 class="text-center text-primary mb-4">Video: Signos de Alerta del Cáncer</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Video: Signos de Alerta del Cáncer</h2>
         <div class="d-flex justify-content-center mt-5">
             <div class="ratio ratio-16x9" style="max-width: 900px;">
                 <iframe  src="https://www.youtube.com/embed/bYCcXcIZDCc" title="🛑¿CUÁLES SON LOS SÍNTOMAS DEL CÁNCER?" allowfullscreen></iframe>

@@ -107,6 +107,9 @@ function getAssociationById($id)
     return $result;
 }
 
+/**
+ * Metodo para mostrar todas las asociaciones disponibles
+ */
 function getAllAssociation()
 {
     $query = "SELECT * FROM associations";
@@ -141,7 +144,7 @@ function getAllAssociation()
                             <img src='../$logo' alt='Logo' width='50' height='50' style='object-fit: cover; border-radius: 5px;'>
                         </td>
                         <td class='text-center align-middle d-none d-sm-table-cell'>$telefono</td>
-                        <td class='text-center align-middle d-none d-sm-table-cell'>$sitio_web</td>
+                        <td class='text-center align-middle d-none d-sm-table-cell'><a style='color:#9e5af9; text-decoration: none;' href='$sitio_web'>$sitio_web</a></td>
                     </tr>
                 ";
         }

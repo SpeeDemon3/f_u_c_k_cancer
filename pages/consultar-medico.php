@@ -54,8 +54,8 @@ if (isset($_SESSION['rol'])) {
     <!-- Encabezado -->
     <header class="text-black text-center py-5">
         <div class="container">
-            <h1 class="fw-bold">¿Cuándo Consultar al Médico?</h1>
-            <p class="lead">Reconoce las señales y actúa a tiempo para una mejor salud.</p>
+            <h1 class="fw-bold" style="color:rgba(82, 14, 170, 0.9)">¿Cuándo Consultar al Médico?</h1>
+            <p class="lead" style="color: grey">Reconoce las señales y actúa a tiempo para una mejor salud.</p>
         </div>
     </header>
 
@@ -66,7 +66,7 @@ if (isset($_SESSION['rol'])) {
                 <img src="../img/educacion/consultar-medico.jpg" class="img-fluid rounded shadow-lg" alt="Consulta médica">
             </div>
             <div class="col-md-6">
-                <h2 class="text-primary">Síntomas que requieren atención médica</h2>
+                <h2 style="color:rgb(125, 87, 175)">Síntomas que requieren atención médica</h2>
                 <p>Si presentas alguno de estos síntomas durante más de dos semanas, es recomendable que consultes a un médico:</p>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><strong>✔ Pérdida de peso inexplicable</strong></li>
@@ -82,7 +82,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Preguntas Frecuentes -->
     <div class="container mt-5">
-        <h2 class="text-center text-primary mb-4">Preguntas Frecuentes</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Preguntas Frecuentes</h2>
         <div class="accordion" id="faqConsulta">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -113,7 +113,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Video Educativo -->
     <div class="container mt-5 mb-5 text-center">
-        <h2 class="text-center text-primary mb-4">Video: La Importancia de la Detección Temprana del Cáncer</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Video: La Importancia de la Detección Temprana del Cáncer</h2>
         <div class="d-flex justify-content-center mt-5">
             <div class="ratio ratio-16x9" style="max-width: 900px;">
                 <iframe  src="https://www.youtube.com/embed/33NTpSi4vQI" title="La Importancia de la Detección Temprana del Cáncer ⚕️" allowfullscreen></iframe>

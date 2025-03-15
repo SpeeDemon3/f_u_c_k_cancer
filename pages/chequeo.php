@@ -55,8 +55,8 @@ if (isset($_SESSION['rol'])) {
     <!-- Encabezado -->
     <header class="text-black text-center py-5">
         <div class="container">
-            <h1 class="fw-bold">Importancia de los Chequeos Médicos</h1>
-            <p class="lead">Los exámenes médicos pueden salvar vidas al detectar el cáncer a tiempo.</p>
+            <h1 class="fw-bold" style="color:rgba(82, 14, 170, 0.9)">Importancia de los Chequeos Médicos</h1>
+            <p class="lead" style="color: grey">Los exámenes médicos pueden salvar vidas al detectar el cáncer a tiempo.</p>
         </div>
     </header>
 
@@ -67,7 +67,7 @@ if (isset($_SESSION['rol'])) {
                 <img src="../img/educacion/chequeo.jpg" class="img-fluid rounded shadow-lg" alt="Chequeos médicos">
             </div>
             <div class="col-md-6">
-                <h2 class="text-primary">¿Por qué son importantes los chequeos?</h2>
+                <h2 style="color:rgb(125, 87, 175)">¿Por qué son importantes los chequeos?</h2>
                 <p>Detectar el cáncer a tiempo aumenta significativamente las probabilidades de curación. Los chequeos regulares pueden identificar anomalías antes de que causen síntomas.</p>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><strong>✔ Detección temprana:</strong> Diagnóstico antes de que se propague.</li>
@@ -81,7 +81,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Acordeón con exámenes médicos recomendados -->
     <div class="container mt-5">
-        <h2 class="text-center text-primary mb-4">Chequeos Médicos Según Edad y Género</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Chequeos Médicos Según Edad y Género</h2>
         <div class="accordion" id="accordionCheckups">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -136,7 +136,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Video Educativo -->
     <div class="container mt-5 mb-5 text-center">
-        <h2 class="text-center text-primary mb-4">Video: La importancia del chequeo como prevención</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Video: La importancia del chequeo como prevención</h2>
         <div class="d-flex justify-content-center mt-5">
             <div class="ratio ratio-16x9" style="max-width: 900px;">
                 <iframe src="https://www.youtube.com/embed/90Hm7cnrEkk" title="LA IMPORTANCIA DEL CHEQUEO DE RUTINA COMO PREVENCIÓN CONTRA EL CÁNCER" allowfullscreen></iframe>

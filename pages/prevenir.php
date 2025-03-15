@@ -55,8 +55,8 @@ if (isset($_SESSION['rol'])) {
     <!-- Encabezado -->
     <header class="text-black text-center py-5">
         <div class="container">
-            <h1 class="fw-bold">Prevención del Cáncer</h1>
-            <p class="lead">Estrategias para reducir el riesgo de cáncer y mejorar tu calidad de vida.</p>
+            <h1 class="fw-bold" style="color:rgba(82, 14, 170, 0.9)">Prevención del Cáncer</h1>
+            <p class="lead" style="color: grey">Estrategias para reducir el riesgo de cáncer y mejorar tu calidad de vida.</p>
         </div>
     </header>
 
@@ -67,7 +67,7 @@ if (isset($_SESSION['rol'])) {
                 <img src="../img/educacion/reducir-riesgo.jpg" class="img-fluid rounded shadow-lg mb-4" alt="Prevención del cáncer">
             </div>
             <div class="col-md-6">
-                <h2 class="text-primary">¿Cómo reducir el riesgo de cáncer?</h2>
+                <h2 style="color:rgb(125, 87, 175)">¿Cómo reducir el riesgo de cáncer?</h2>
                 <p>El cáncer puede prevenirse en gran medida adoptando hábitos de vida saludables. Aquí tienes algunas estrategias clave:</p>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><strong>1. Alimentación saludable:</strong> Rica en frutas, verduras y fibra.</li>
@@ -82,7 +82,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Acordeón con información detallada -->
     <div class="container mt-5">
-        <h2 class="text-center text-primary mb-4">Factores de prevención en detalle</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Factores de prevención en detalle</h2>
         <div class="accordion" id="accordionPrevention">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -125,7 +125,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Video Educativo -->
     <div class="container mt-5 mb-5 text-center">
-        <h2 class="text-center text-primary mb-4">Video: Prevenir el cáncer está en nuestras manos</h2>
+        <h2 class="text-center mb-4" style="color:rgb(125, 87, 175)">Video: Prevenir el cáncer está en nuestras manos</h2>
         <div class="d-flex justify-content-center mt-5">
             <div class="ratio ratio-16x9" style="max-width: 900px;">
                 <iframe  src="https://www.youtube.com/embed/C6FcF--8pA4" title="Prevenir el cáncer está en nuestras manos" allowfullscreen></iframe>
