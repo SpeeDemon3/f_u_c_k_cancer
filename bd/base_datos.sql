@@ -58,11 +58,11 @@ INSERT INTO users (nombre, email, pass, rol) VALUES
 
 INSERT INTO associations (nombre_asociacion, email, pass, descripcion, logo, telefono, sitio_web, user_id) VALUES
 ('Asociación Española Contra el Cáncer', 'aContraelCancer@gamil.com', 'Password12345!6', 'Nuestro propósito es aliviar y evitar, en la medida que sea posible, el sufrimiento en las personas producido por el cáncer, cualquier que sea su lugar de residencia 
-y sus circunstancias personales.', 'img/logo-asociacion/1741119366_asociacion-1.jpg', '912345678', 'https://www.contraelcancer.es/es', 2),
+y sus circunstancias personales.', 'img/logo-asociacion/1741119366_asociacion-1.jpg', '912345678', 'https://www.contraelcancer.es/es', 2, 'asociaciones/asociación-fuck-cancer.php'),
 ('Asociación de Pacientes Oncológicos', 'contacto@pacientesonco.org', 'Password12345!6', 'Grupo de apoyo para pacientes y familiares afectados por el cáncer.', 
-'img/logo-asociacion/1741119931_asociacion-6.jpg', '923456789', 'https://www.pacientesonco.org', 3),
+'img/logo-asociacion/1741119931_asociacion-6.jpg', '923456789', 'https://www.pacientesonco.org', 3, 'asociaciones/asociación-fuck-cancer.php'),
 ('criscancer', 'criscancer@gmail.org', 'Password12345!613', 'Es una organización de carácter privado e independiente cuyo objetivo es fomentar y financiar proyectos de investigación para el tratamiento y cura del cáncer.', 
-'img/logo-asociacion/1741121302_asociacion-4.jpg', '923226789', 'https://criscancer.org/es/', 4);
+'img/logo-asociacion/1741121302_asociacion-4.jpg', '923226789', 'https://criscancer.org/es/', 4, 'asociaciones/asociación-fuck-cancer.php');
 
 INSERT INTO news (titulo, contenido, imagen_url, ruta_pagina, autor_id) VALUES
 ('Nuevo tratamiento para el cáncer de mama', 'Un equipo de investigadores ha desarrollado un tratamiento innovador para el cáncer de mama.', 'img/noticias/67c762c94ea64_noticas-3.jpg', 'pages/noticias/noticia_21.php', 3),

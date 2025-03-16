@@ -119,7 +119,7 @@ function crearPaginaNoticia($noticia_id, $titulo, $descripcion, $ruta_imagen_db)
                 <main class="container my-5">
                     <h1 class="text-center mb-4 font-monospace"  style="color:rgb(88, 34, 162);">$titulo</h1>
                     <div class="text-center mb-4">
-                        <img src="../../$ruta_imagen_db" alt="$titulo" class="web-noticia-imagen img-fluid web-noticia-imagen" style="max-width: 60%; height: auto; border-radius: 10px;">
+                        <img src="../../$ruta_imagen_db" alt="$titulo" class="web-noticia-imagen img-fluid web-noticia-imagen" style="max-width: 50%; height: auto; border-radius: 10px;">
                     </div>
                     <div class="web-noticia-contenido text-center mx-auto" style="max-width: 800px; font-size: 1.1rem; line-height: 1.6;">
                         <p>$descripcion</p>
@@ -495,7 +495,7 @@ function generarPaginaAsociacion($name, $descripcion, $urlImage, $phone, $webSit
             <main class="container my-5">
                 <h1 class="text-center mb-4 font-monospace" style="color:rgb(88, 34, 162);">$name</h1>
                 <div class="text-center mb-4">
-                    <img src="../../$urlImage" alt="$name" class="img-fluid rounded shadow-lg" style="max-width: 60%; height: auto; border-radius: 10px;">
+                    <img src="../../$urlImage" alt="$name" class="img-fluid rounded shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
                 </div>
                 <div class="web-asociacion-contenido text-center mx-auto" style="max-width: 800px; font-size: 1.1rem; line-height: 1.6;">
                     <p>$descripcion</p>
