@@ -115,6 +115,57 @@ function getAllAssociation()
     $query = "SELECT * FROM associations";
     $result = mysqli_query($GLOBALS['con'], $query) or die("Error en la consulta");
 
+    if (mysqli_num_rows($result) > 0) {
+        echo "            
+            <table class='table table-striped mt-3'>
+                <thead class='table-dark'>
+                    <tr>
+                        <th class='text-center align-middle'>Nombre Asociación</th>
+                        <th class='text-center align-middle'>Correo</th>
+                        <th class='text-center align-middle d-none d-sm-table-cell'>Descripción</th>
+                        <th class='text-center align-middle'>Logo</th>
+                        <th class='text-center align-middle d-none d-sm-table-cell'>Teléfono</th>
+                        <th class='text-center align-middle d-none d-sm-table-cell'>Sitio Web</th>
+                        <th class='text-center align-middle'>Página</th>
+                    </tr>
+                </thead>
+                <tbody>
+        ";
+
+        while ($row = mysqli_fetch_array($result)) {
+            extract($row);
+            echo "
+                <tr>
+                    <td class='text-center align-middle'>$nombre_asociacion</td>
+                    <td class='text-center align-middle'>$email</td>
+                    <td class='text-center align-middle d-none d-sm-table-cell'>$descripcion</td>
+                    <td class='text-center align-middle'>
+                        <img src='../$logo' alt='Logo' width='50' height='50' style='object-fit: cover; border-radius: 5px;'>
+                    </td>
+                    <td class='text-center align-middle d-none d-sm-table-cell'>$telefono</td>
+                    <td class='text-center align-middle d-none d-sm-table-cell'>
+                        <a style='color:#9e5af9; text-decoration: none;' href='$sitio_web' target='_blank'>$sitio_web</a>
+                    </td>
+                    <td class='text-center align-middle'>
+                        <a href='../$pagina' class='btn btn-primary btn-sm'>Ver Página</a>
+                    </td>
+                </tr>
+            ";
+        }
+
+        echo "
+                </tbody>
+            </table>
+        ";
+    }
+}
+
+
+function getAllAssociation1()
+{
+    $query = "SELECT * FROM associations";
+    $result = mysqli_query($GLOBALS['con'], $query) or die("Error en la consulta");
+
     // Si la consulta devuelve registros
     if (mysqli_num_rows($result) > 0) {
         // Genero una tabla
@@ -461,7 +512,58 @@ function deleteNew($newId)
     $result = mysqli_query($GLOBALS['con'], $query) or die("Error al eliminar el registro");
 }
 
+/**
+ * Metodo para insertar asociaciones
+ */
 function insertAssociation($name, $email, $pass, $descripcion, $urlImage, $phone, $webSite)
+{
+    $conn = $GLOBALS['con'];
+
+    // Insertar en la tabla users
+    $queryUser = "INSERT INTO users (nombre, email, pass) VALUES (?, ?, ?)";
+    $stmtUser = $conn->prepare($queryUser);
+
+    if (!$stmtUser) {
+        die("Error en la consulta de usuarios: " . $conn->error);
+    }
+
+    $stmtUser->bind_param("sss", $name, $email, $pass);
+    if (!$stmtUser->execute()) {
+        die("Error al insertar usuario: " . $stmtUser->error);
+    }
+
+    $userId = $stmtUser->insert_id;
+    $stmtUser->close();
+
+    // Generar la página de la asociación
+    $pagina = generarPaginaAsociacion($name, $descripcion, $urlImage, $phone, $webSite);
+    if (!$pagina) {
+        die("Error al crear la página de la asociación.");
+    }
+
+    // Insertar en la tabla associations
+    $queryAssociation = "INSERT INTO associations (nombre_asociacion, email, pass, descripcion, logo, telefono, sitio_web, pagina, user_id) 
+                         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    $stmtAssociation = $conn->prepare($queryAssociation);
+
+    if (!$stmtAssociation) {
+        die("Error en la consulta de asociaciones: " . $conn->error);
+    }
+
+    $stmtAssociation->bind_param("ssssssssi", $name, $email, $pass, $descripcion, $urlImage, $phone, $webSite, $pagina, $userId);
+    if (!$stmtAssociation->execute()) {
+        die("Error al insertar asociación: " . $stmtAssociation->error);
+    }
+
+    $stmtAssociation->close();
+
+    echo "Asociación registrada con éxito y página creada.";
+}
+
+
+
+
+function insertAssociation1($name, $email, $pass, $descripcion, $urlImage, $phone, $webSite)
 {
 
     $conn = $GLOBALS['con'];

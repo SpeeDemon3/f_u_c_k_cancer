@@ -21,6 +21,7 @@ descripcion text,
 logo varchar(255),
 telefono varchar(10),
 sitio_web varchar(255),
+pagina VARCHAR(255) NOT NULL,
 user_id INT UNIQUE, -- Clave foránea que referencia a la tabla users
 CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
