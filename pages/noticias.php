@@ -89,10 +89,10 @@ try {
     <!-- Encabezado -->
     <div class="container mt-4 flex-grow-1">
         <div class="d-flex justify-content-center align-items-center">
-            <img src="../img/sec_noticias.jpg" class="img-fluid img-thumbnail rounded m-5 text-center" alt="Seccion de noticias, imagen de un medico">
+            <img src="../img/sec_noticias.jpg" class="img-fluid img-thumbnail rounded m-5 text-center" style="width: 700px;" alt="Seccion de noticias, imagen de un medico">
         </div>
 
-        <h2 class="text-center mb-4 mt-4 fs-1 fw-semibold font-monospace" style="color: #aa84de;">Últimas Noticias</h2>
+        <h2 class="text-center mb-5 mt-4 fs-1 font-monospace" style="color: #aa84de;">Últimas Noticias</h2>
 
         <!-- Sección de Noticias -->
         <div class="row">
@@ -102,18 +102,18 @@ try {
                 $contenido = htmlspecialchars($row["contenido"]);
                 $contenido_limitado = strlen($contenido) > 200 ? substr($contenido, 0, 350) . '...' : $contenido;
             ?>
-<div class="col-md-4 mb-3">
-    <div class="card h-100 d-flex flex-column shadow-sm">
-        <img src="../<?= htmlspecialchars($row["imagen_url"]) ?>" class="card-img-top fixed-img" height="300px" alt="Noticia">
-        <div class="card-body d-flex flex-column">
-            <h5 class="card-title"><?= htmlspecialchars($row["titulo"]) ?></h5>
-            <p class="card-text flex-grow-1"><?= $contenido_limitado ?></p>
-            <div class="d-flex justify-content-center gap-2">
-            <a href="../<?= htmlspecialchars($row["ruta_pagina"]) ?>" class="btn btn-primary mt-auto btn-custom">Leer más</a>
-            </div>
-        </div>
-    </div>
-</div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 d-flex flex-column shadow-sm">
+                        <img src="../<?= htmlspecialchars($row["imagen_url"]) ?>" class="card-img-top fixed-img" height="300px" alt="Noticia">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><?= htmlspecialchars($row["titulo"]) ?></h5>
+                            <p class="card-text flex-grow-1"><?= $contenido_limitado ?></p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="../<?= htmlspecialchars($row["ruta_pagina"]) ?>" class="btn btn-primary mt-auto btn-custom">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             <?php } ?>
         </div>

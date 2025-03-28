@@ -147,8 +147,15 @@ body {
 
 /* Imagen de la portada de asociaciones */
 #portada-asociacion {
-    max-height: 650px; /* Altura máxima de 300px */
+    max-height: 450px; /* Altura máxima */
     width: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Responsive para el input para buscar asociaciones */
+@media (max-width: 768px) {
+    #busqueda {
+        font-size: 12px;
+    }
 }
 
 /* Ajustes boton leer mas educacion */

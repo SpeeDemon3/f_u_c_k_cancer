@@ -1,22 +1,22 @@
 <?php
-    session_start();
+session_start();
 
-    require_once("../functions/tools.php");
+require_once("../functions/tools.php");
 
-    if (isset($_SESSION['rol'])) {
-        if ($_SESSION['rol'] == 1) {
-            echo mostrarLinkAsociacionDesdeNoticia();
-        }
-
-        if ($_SESSION['rol'] == 3) {
-            echo mostrarLinkAdminDesdeNoticia();
-        }
-
+if (isset($_SESSION['rol'])) {
+    if ($_SESSION['rol'] == 1) {
+        echo mostrarLinkAsociacionDesdeNoticia();
     }
+
+    if ($_SESSION['rol'] == 3) {
+        echo mostrarLinkAdminDesdeNoticia();
+    }
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,13 +25,14 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/validateFormAssociation.js" defer></script>
 </head>
+
 <body>
-    
+
     <!-- Barra de navegación -->
     <nav id="nav-principal" class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="../index.php">
-                <img src="../img/logo-web.jpg" alt="Logo" class="me-2"> 
+                <img src="../img/logo-web.jpg" alt="Logo" class="me-2">
                 <span>Unidos Contra el Cáncer</span>
             </a>
 
@@ -56,7 +57,7 @@
 
         <!-- Imagen destacada -->
         <div class="text-center mt-4">
-            <img src="../img/asociacones/asociacion-2.jpg" alt="Imagen de bienvenida" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+            <img src="../img/asociacones/asociacion-2.jpg" alt="Imagen de bienvenida" class="img-fluid rounded shadow" style="max-width: 30%; height: auto;">
         </div>
 
         <!-- Mensaje principal -->
@@ -73,20 +74,28 @@
                     <h5 class="text-center fw-bold">Al registrarte en nuestra plataforma, podrás:</h5>
                     <ul class="list-unstyled text-center mt-3">
                         <li class="mb-3 d-flex justify-content-center align-items-center">
-                            <span class="badge bg-success p-2 me-2 d-inline-block">✅</span>
-                            Publicar tus noticias y eventos para que más personas conozcan tu labor y proyectos.
+                            <p>
+                                <span class="badge bg-success p-2 me-2 d-inline-block">✅</span>
+                                <p>Publicar tus noticias y eventos para que más personas conozcan tu labor y proyectos.</p>
+                            </p>
                         </li>
                         <li class="mb-3 d-flex justify-content-center align-items-center">
-                            <span class="badge bg-success p-2 me-2 d-inline-block">✅</span>
-                            Ampliar tu visibilidad y llegar a un público más amplio interesado en tu causa.
+                            <p>
+                                <span class="badge bg-success p-2 me-2 d-inline-block">✅</span>
+                                <p>Ampliar tu visibilidad y llegar a un público más amplio interesado en tu causa donde la información sera lo mas relevante.</p>
+                            </p>
                         </li>
                         <li class="mb-3 d-flex justify-content-center align-items-center">
-                            <span class="badge bg-success p-2 me-2 d-inline-block">✅</span>
-                            Crear conexiones valiosas con otras asociaciones, colaboradores y personas comprometidas.
+                            <p>
+                                <span class="badge bg-success p-2 me-2 d-inline-block">✅</span>
+                                <p>Crear conexiones valiosas con otras asociaciones, colaboradores y personas comprometidas.</p>
+                            </p>
                         </li>
                         <li class="mb-3 d-flex justify-content-center align-items-center">
-                            <span class="badge bg-success p-2 me-2 d-inline-block">✅</span>
-                            Compartir tus logros y mostrar el impacto positivo que generas en la sociedad.
+                            <p>
+                                <span class="badge bg-success p-2 me-2 d-inline-block">✅</span>
+                                <p>Compartir tus metas, logros, y mostrar el impacto positivo que generas en la sociedad.</p>
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -101,51 +110,51 @@
             <p class="fw-bold text-primary">¡Regístrate hoy mismo y comienza a difundir tu mensaje!</p>
             <p class="fw-bold">¡Tu causa merece ser conocida!</p>
         </div>
-                <div class="container mt-5 bg-light p-4 rounded shadow">
-                    <h1 class="text-center mb-4">Registrar Asociación</h1>
-                    <form id="form-association" action="process/processNewAssociation.php" method="post" enctype="multipart/form-data">
-                        <div class="mb-3">
-                            <label for="nombre_asociacion" class="form-label fw-bold">Nombre</label>
-                            <span id="error-name"></span>
-                            <input type="text" id="name" name="nombre_asociacion" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label fw-bold">Email</label>
-                            <span id="error-email"></span>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="pass" class="form-label fw-bold">Contraseña</label>
-                            <span id="error-pass"></span>
-                            <input type="password" id="pass" name="pass" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="descripcion" class="form-label fw-bold">Descripción</label>
-                            <span id="error-descripcion"></span>
-                            <textarea id="descripcion" name="descripcion" class="form-control" rows="5" required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="imagen" class="form-label fw-bold">Logo</label>
-                            <span id="error-image"></span>
-                            <input type="file" id="image" name="imagen" class="form-control">
-                            <small class="text-muted">La imagen de tu asociación es muy importante para nosotros.</small>
-                        </div>
-                        <div class="mb-3">
-                            <label for="telefono" class="form-label fw-bold">Teléfono</label>
-                            <span id="error-phone"></span>
-                            <input type="text" id="phone" name="telefono" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="sitio_web" class="form-label fw-bold">Sitio Web</label>
-                            <span id="error-web"></span>
-                            <input type="text" id="web" name="sitio_web" class="form-control" required>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Guardar cambios</button>
-                            <a href="../index.php" class="btn btn-secondary">Cancelar</a>
-                        </div>
-                    </form>
-            </div>
+        <div class="container mt-5 bg-light p-4 rounded shadow">
+            <h1 class="text-center mb-4">Registrar Asociación</h1>
+            <form id="form-association" action="process/processNewAssociation.php" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="nombre_asociacion" class="form-label fw-bold">Nombre</label>
+                    <span id="error-name"></span>
+                    <input type="text" id="name" name="nombre_asociacion" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-bold">Email</label>
+                    <span id="error-email"></span>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="pass" class="form-label fw-bold">Contraseña</label>
+                    <span id="error-pass"></span>
+                    <input type="password" id="pass" name="pass" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label fw-bold">Descripción</label>
+                    <span id="error-descripcion"></span>
+                    <textarea id="descripcion" name="descripcion" class="form-control" rows="5" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="imagen" class="form-label fw-bold">Logo</label>
+                    <span id="error-image"></span>
+                    <input type="file" id="image" name="imagen" class="form-control">
+                    <small class="text-muted">La imagen de tu asociación es muy importante para nosotros.</small>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label fw-bold">Teléfono</label>
+                    <span id="error-phone"></span>
+                    <input type="text" id="phone" name="telefono" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="sitio_web" class="form-label fw-bold">Sitio Web</label>
+                    <span id="error-web"></span>
+                    <input type="text" id="web" name="sitio_web" class="form-control" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                    <a href="../index.php" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
     </main>
 
 
@@ -157,4 +166,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
