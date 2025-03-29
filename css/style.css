@@ -179,3 +179,91 @@ body {
     width: 100%; 
     object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
 }
+
+
+/* Estilos para mostrar las 2 ultimas noticias */
+
+
+.card-responsive-last-two-news {
+    width: 90%; /* Se adapta al ancho del contenedor */
+    max-width: 500px; /* Tamaño máximo en pantallas grandes */
+}
+
+.card-responsive-last-two-news img {
+    height: 400px; /* Tamaño predeterminado */
+    object-fit: cover;
+}
+
+/* 📱 Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card-responsive-last-two-news {
+        max-width: 300px; /* Reduce el tamaño en móviles */
+        margin-bottom: 10px;
+    }
+
+    .card-responsive-last-two-news img {
+        max-height: 200px;
+
+    }
+}
+
+
+/* 📱 Estilos para pantallas pequeñas en el index de las ultimas noticias*/
+@media (max-width: 768px) {
+    .card-responsive-last-association {
+        display: block;
+        max-width: 300px; /* Reduce el tamaño en móviles */
+        height: auto;
+        margin: 0 auto 10px; /* Centra la tarjeta y deja espacio abajo */
+    }
+
+    .card-responsive-last-association img {
+        max-height: 250px;
+
+    }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    #first-info h1 {
+        font-size: 2rem; /* Reduce tamaño del título */
+    }
+
+    #first-info p {
+        font-size: 1rem; /* Reduce tamaño del texto */
+    }
+
+    #btn-registrar {
+        font-size: 1rem; /* Reduce tamaño del botón */
+        padding: 0px 15px; /* Ajusta el padding del botón */
+    }
+}
+
+/* Responsive para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    #first-info h1 {
+        font-size: 1.6rem; /* Reduce aún más el título */
+    }
+
+    #first-info p {
+        font-size: 0.9rem; /* Reduce el texto */
+    }
+
+    #btn-registrar {
+        font-size: 0.8rem; /* Botón más pequeño */
+        padding: 6px 12px;
+    }
+}
+
+/* Responsive: Mostrar el footer en pantallas pequeñas */
+@media (max-width: 768px) {
+    #footer-principal {
+        display: block !important; /* Asegura que el footer se muestre */
+        position: relative; /* Asegura que no esté oculto por otros elementos */
+        margin-top: 20px; /* Agrega espacio para separar el contenido */
+        padding: 1rem; /* Ajusta el padding si es necesario */
+    }
+}
+
+
+

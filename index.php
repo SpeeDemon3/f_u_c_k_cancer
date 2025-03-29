@@ -58,7 +58,7 @@ if (isset($_SESSION['rol'])) {
 
     <!-- Sección principal -->
     <header class="bg-light text-center py-5">
-        <div class="container">
+        <div class="container" id="first-info">
             <h1 class="display-4" style="color:rgb(88, 34, 162);">Información, Educación y Esperanza</h1>
             <p class="lead" style="color:rgb(181, 162, 206) ">Encuentra información fiable y conoce asociaciones que trabajan para combatir el cáncer.</p>
             <a href="pages/registrar_asociacion.php" id="btn-registrar" class="btn btn-primary btn-lg">Registra tu asociación</a>

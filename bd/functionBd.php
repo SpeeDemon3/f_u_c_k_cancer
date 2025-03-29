@@ -597,7 +597,7 @@ function getLastTwoNews() {
             $contenido_limitado = strlen($contenido) > 100 ? substr($contenido, 0, 100) . '...' : $contenido;
 
             echo '<div class="col-md-5 col-sm-12 mb-3 d-flex justify-content-center">
-                    <div class="card" style="width: 100%;">
+                    <div class="card card-responsive-last-two-news" style="width: 100%;">
                         <img src="' . htmlspecialchars($ruta_imagen) . '" class="card-img-top img-fluid" alt="Noticia" style="height: 500px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title text-center">' . htmlspecialchars($row["titulo"]) . '</h5>
@@ -634,7 +634,7 @@ function mostrarUltimasAsociaciones()
             $contenido_limitado = strlen($contenido) > 100 ? substr($contenido, 0, 100) . '...' : $contenido;
 
             echo '<div class="col-md-4 col-sm-12 mb-3">
-                    <div class="card h-100 d-flex flex-column">
+                    <div class="card h-100 d-flex flex-column card-responsive-last-association">
                         <img src="' . htmlspecialchars($logo) . '" class="card-img-top" alt="Asociación ' . htmlspecialchars($nombre_asociacion) . '">
                         <div class="card-body flex-grow-1 d-flex flex-column">
                             <h5 class="card-title">' . htmlspecialchars($nombre_asociacion) . '</h5>
