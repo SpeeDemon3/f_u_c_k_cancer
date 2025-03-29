@@ -265,5 +265,49 @@ body {
     }
 }
 
+/* Responsive para pantallas pequeñas de noticias en la pagina noticias*/
+@media (max-width: 768px) {
+    #tarjeta-news {
+        display: block;
+        max-width: 300px; /* Reduce el tamaño en móviles */
+        height: auto;
+        margin: 0 auto 10px; /* Centra la tarjeta y deja espacio abajo */
+    }
+
+    #tarjeta-news .fixed-img {
+        /* Reducimos la altura de la imagen en pantallas pequeñas */
+        max-height: 200px;
+        object-fit: cover; /* Para mantener la proporción de la imagen */
+    }
+
+    #tarjeta-news .card-body h5 {
+        font-size: 1rem; /* Ajustamos el tamaño del título */
+    }
+
+    #tarjeta-news .card-body p {
+        font-size: 0.8rem; /* Reducimos el tamaño del texto */
+    }
+
+    #tarjeta-news .btn-custom {
+        font-size: 0.8rem; /* Ajustamos el tamaño del botón */
+        padding: 0.5rem 1rem; /* Ajustamos el padding para botones más pequeños */
+    }
+}
+
+/* Responsive de noticias en la pagina noticias para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    #tarjeta-news .card-body h5 {
+        font-size: 1rem; /* Aún más pequeño en pantallas muy pequeñas */
+    }
+
+    #tarjeta-news .card-body p {
+        font-size: 0.85rem; /* Ajustamos el tamaño del texto aún más */
+    }
+
+    #tarjeta-news .btn-custom {
+        font-size: 0.7rem; /* Hacemos el botón más pequeño */
+        padding: 0.4rem 1rem; /* Ajustamos el padding */
+    }
+}
 
 

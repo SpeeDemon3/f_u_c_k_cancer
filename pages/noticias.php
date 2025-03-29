@@ -103,7 +103,7 @@ try {
                 $contenido_limitado = strlen($contenido) > 200 ? substr($contenido, 0, 350) . '...' : $contenido;
             ?>
                 <div class="col-md-4 mb-3">
-                    <div class="card h-100 d-flex flex-column shadow-sm">
+                    <div id="tarjeta-news" class="card h-100 d-flex flex-column shadow-sm">
                         <img src="../<?= htmlspecialchars($row["imagen_url"]) ?>" class="card-img-top fixed-img" height="300px" alt="Noticia">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title"><?= htmlspecialchars($row["titulo"]) ?></h5>
