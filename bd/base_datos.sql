@@ -38,16 +38,6 @@ CREATE TABLE IF NOT EXISTS news (
     CONSTRAINT fk_autor FOREIGN KEY (autor_id) REFERENCES users(id) ON DELETE SET NULL
 );
 
-/* Tabla de educación */
-CREATE TABLE IF NOT EXISTS education (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    titulo VARCHAR(255) NOT NULL,
-    contenido TEXT NOT NULL,
-    tipo ENUM('articulo', 'video', 'infografia') NOT NULL,
-    url VARCHAR(255),
-    imagen_url VARCHAR(255)
-);
-
 /* Registros para llenar las tablas*/
 INSERT INTO users (nombre, email, pass, rol) VALUES
 ('Admin', 'admin@gmail.com', 'Password12345!6', 3), /*Rol Admin*/
@@ -72,12 +62,6 @@ INSERT INTO news (titulo, contenido, imagen_url, ruta_pagina, autor_id) VALUES
 Los sarcomas infantiles son además, poco frecuentes con respecto a otros tipos de cáncer pediátrico, como las leucemias o los tumores cerebrales. Pero, una vez se extienden, las posibilidades de supervivencia son bajas, solamente de un 30%.
 Hasta ahora, las posibilidades terapéuticas siempre han girado alrededor de la cirugía y la quimioterapia, pero son poco efectivas en etapas avanzadas de estas enfermedades. Por eso es imprescindible desarrollar nuevas estrategias terapéuticas para tratar eficazmente estos tumores.
 La reciente aparición de las terapias CAR-T, en las cuales la Unidad CRIS de terapias Avanzadas es especialista, abre una puerta a la esperanza en este sentido. Consisten en tomar células del sistema inmunitario (linfocitos T) del niño o de un donante, y modificarlas con una especie de detector, que les permite encontrar y eliminar a las células tumorales con gran eficacia. Estas terapias han revolucionado el tratamiento de los cánceres de la sangre, como las leucemias, linfomas, etc. Recientemente están irrumpiendo con fuerza en los tumores sólidos,  algo impensable hace solo unos años.', 'img/noticias/67c769e3279c7_extra-4.jpg', 'pages/noticias/noticia_24.php', 1);
-
-INSERT INTO education (titulo, contenido, tipo, url, imagen_url) VALUES
-('Guía para la prevención del cáncer', 'Consejos prácticos para reducir el riesgo de desarrollar cáncer.', 'articulo', 'www.fundacioncancer.org/prevencion', 'prevencion.jpg'),
-('Video: Cómo realizar un autoexamen de mama', 'Aprende a realizar un autoexamen de mama para la detección temprana del cáncer.', 'video', 'www.fundacioncancer.org/video-mama', 'autoexamen.jpg'),
-('Infografía: Tipos de cáncer más comunes', 'Infografía que describe los tipos de cáncer más frecuentes y sus síntomas.', 'infografia', 'www.fundacioncancer.org/infografia-tipos', 'tipos_cancer.jpg');
-
 
 
 
