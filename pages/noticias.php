@@ -11,7 +11,7 @@ if (isset($_SESSION['rol'])) {
     }
 }
 
-// Configuracion de la base de datos
+// Configuración de la base de datos
 $host = "localhost";
 $username = "root";
 $password = "";
@@ -25,7 +25,7 @@ try {
     // Cantidad de noticias por página
     $noticias_por_pagina = 3;
 
-    // Obtener el numero de página actual
+    // Obtener el número de página actual
     $pagina_actual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
     if ($pagina_actual < 1) {
         $pagina_actual = 1;
@@ -34,13 +34,32 @@ try {
     // Calcular el offset para la consulta SQL
     $offset = ($pagina_actual - 1) * $noticias_por_pagina;
 
+    // Obtener el término de búsqueda (si existe)
+    $busqueda = isset($_GET['busqueda']) ? trim($_GET['busqueda']) : '';
+
+    if ($busqueda) {
+        // Consulta con filtro de búsqueda
+        $stmt_total = $pdo->prepare("SELECT COUNT(*) FROM news WHERE titulo LIKE :busqueda OR contenido LIKE :busqueda");
+        $busqueda_param = "%$busqueda%";
+        $stmt_total->bindParam(':busqueda', $busqueda_param, PDO::PARAM_STR);
+        $stmt_total->execute();
+    } else {
+        // Consulta sin filtro (todas las noticias)
+        $stmt_total = $pdo->query("SELECT COUNT(*) FROM news");
+    }
+
     // Obtener el número total de noticias
-    $stmt_total = $pdo->query("SELECT COUNT(*) FROM news");
     $total_noticias = $stmt_total->fetchColumn();
     $total_paginas = ceil($total_noticias / $noticias_por_pagina);
 
-    // Consulta SQL con paginacion
-    $stmt = $pdo->prepare("SELECT * FROM news ORDER BY fecha_publicacion DESC LIMIT :limit OFFSET :offset");
+    // Consulta principal
+    if ($busqueda) {
+        $stmt = $pdo->prepare("SELECT * FROM news WHERE titulo LIKE :busqueda OR contenido LIKE :busqueda ORDER BY fecha_publicacion DESC LIMIT :limit OFFSET :offset");
+        $stmt->bindParam(':busqueda', $busqueda_param, PDO::PARAM_STR);
+    } else {
+        $stmt = $pdo->prepare("SELECT * FROM news ORDER BY fecha_publicacion DESC LIMIT :limit OFFSET :offset");
+    }
+
     $stmt->bindParam(':limit', $noticias_por_pagina, PDO::PARAM_INT);
     $stmt->bindParam(':offset', $offset, PDO::PARAM_INT);
     $stmt->execute();
@@ -94,16 +113,23 @@ try {
 
         <h2 class="text-center mb-5 mt-4 fs-1 font-monospace" style="color: #aa84de;">Últimas Noticias</h2>
 
+        <!-- Formulario de búsqueda -->
+        <form method="GET" action="" class="mb-5 mt-4" style="width: 300px;">
+            <div class="input-group input-group-sm">
+                <input type="text" id="search-input" class="form-control" name="busqueda" placeholder="Buscar noticias..." value="<?= isset($_GET['busqueda']) ? htmlspecialchars($_GET['busqueda']) : '' ?>">
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </div>
+        </form>
+
         <!-- Sección de Noticias -->
         <div class="row">
             <?php
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                // Limitar contenido a 200 caracteres
                 $contenido = htmlspecialchars($row["contenido"]);
                 $contenido_limitado = strlen($contenido) > 200 ? substr($contenido, 0, 350) . '...' : $contenido;
             ?>
                 <div class="col-md-4 mb-3">
-                    <div id="tarjeta-news" class="card h-100 d-flex flex-column shadow-sm">
+                    <div class="card h-100 d-flex flex-column shadow-sm">
                         <img src="../<?= htmlspecialchars($row["imagen_url"]) ?>" class="card-img-top fixed-img" height="300px" alt="Noticia">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title"><?= htmlspecialchars($row["titulo"]) ?></h5>
@@ -114,7 +140,6 @@ try {
                         </div>
                     </div>
                 </div>
-
             <?php } ?>
         </div>
 
@@ -123,23 +148,19 @@ try {
             <ul class="pagination justify-content-center">
                 <?php if ($pagina_actual > 1): ?>
                     <li class="page-item">
-                        <a class="page-link" href="?pagina=<?= $pagina_actual - 1 ?>" aria-label="Anterior">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
+                        <a class="page-link" href="?pagina=<?= $pagina_actual - 1 ?>&busqueda=<?= urlencode($busqueda) ?>" aria-label="Anterior">&laquo;</a>
                     </li>
                 <?php endif; ?>
 
                 <?php for ($i = 1; $i <= $total_paginas; $i++): ?>
-                    <li class="page-item <?= $i == $pagina_actual ? 'active' : '' ?>">
-                        <a class="page-link" href="?pagina=<?= $i ?>"><?= $i ?></a>
+                    <li class="m-3 page-item <?= $i == $pagina_actual ? 'active' : '' ?>">
+                        <a class="page-link" href="?pagina=<?= $i ?>&busqueda=<?= urlencode($busqueda) ?>"><?= $i ?></a>
                     </li>
                 <?php endfor; ?>
 
                 <?php if ($pagina_actual < $total_paginas): ?>
-                    <li class="page-item">
-                        <a class="page-link" href="?pagina=<?= $pagina_actual + 1 ?>" aria-label="Siguiente">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
+                    <li class="m-3 page-item">
+                        <a class="page-link" href="?pagina=<?= $pagina_actual + 1 ?>&busqueda=<?= urlencode($busqueda) ?>" aria-label="Siguiente">&raquo;</a>
                     </li>
                 <?php endif; ?>
             </ul>
@@ -151,7 +172,13 @@ try {
         <p class="mb-0">&copy; 2025 Unidos Contra el Cáncer. Todos los derechos reservados</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("search-input").addEventListener("input", function() {
+            if (this.value.trim() === "") {
+                window.location.href = window.location.pathname; // Recarga la página sin parámetros
+            }
+        });
+    </script>
 
 </body>
 
