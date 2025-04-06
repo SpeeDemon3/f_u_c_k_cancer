@@ -147,7 +147,7 @@ try {
         <nav>
             <ul class="pagination justify-content-center">
                 <?php if ($pagina_actual > 1): ?>
-                    <li class="page-item">
+                    <li class="page-item m-3">
                         <a class="page-link" href="?pagina=<?= $pagina_actual - 1 ?>&busqueda=<?= urlencode($busqueda) ?>" aria-label="Anterior">&laquo;</a>
                     </li>
                 <?php endif; ?>

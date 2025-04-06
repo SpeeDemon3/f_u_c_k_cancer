@@ -336,7 +336,7 @@ function getNewsByUser($id)
             echo '<div class="col-md-4 mb-3">
                     <div class="card h-100">
                         <div class="d-flex justify-content-center">
-                            <img src="' . htmlspecialchars($ruta_imagen) . '" class="card-img-top img-fluid" alt="Noticia" style="max-width: 100%; height: auto;">
+                            <img src="' . htmlspecialchars($ruta_imagen) . '" class="card-img-top img-fluid" alt="Noticia" style="max-width: 500px; height: 350px;">
                         </div>
                         <div class="card-body">
                             <h5 class="text-center">' . htmlspecialchars($row["titulo"]) . '</h5>
