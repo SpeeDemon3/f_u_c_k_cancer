@@ -388,12 +388,14 @@ function getAssociationManagement()
         // Obtengo los registros y los muestro en la tabla
         while ($row = mysqli_fetch_array($result)) {
             extract($row);
+            $descripcion = substr($descripcion, 0, 100); // Corta la descripción a 100 caracteres
+
             echo "
                     <tr>
                         <td class='text-center align-middle'>$id</td>
                         <td class='text-center align-middle'>$nombre_asociacion</td>
                         <td class='text-center align-middle'>$email</td>
-                        <td class='text-center align-middle'>$descripcion</td>
+                        <td class='text-center align-middle'>" . htmlspecialchars($descripcion) . "...</td>
                         <td class='text-center align-middle'>
                                 <img src='../../$logo' alt='Logo' width='50' height='50' style='object-fit: cover; border-radius: 5px;'>
                         </td>
