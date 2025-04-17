@@ -97,7 +97,7 @@ try {
                 <ul class="navbar-nav" id="list-ul-nav">
                     <li class="nav-item"><a class="nav-link" href="../index.php">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="asociaciones.php">Asociaciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.php">Noticias</a></li>
                     <li class="nav-item"><a class="nav-link" href="educacion.php">Educación</a></li>
                     <li class="nav-item"><a class="nav-link" href="../login/login.php" id="login">Login</a></li>
                 </ul>
@@ -179,6 +179,9 @@ try {
             }
         });
     </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
