@@ -211,7 +211,7 @@ function validateURL() {
         return true;
     } else {
         spanErrorWebSite.style.color = 'red';
-        spanErrorWebSite.innerHTML = 'La dirección web introducida no es válida. Pro favor compruebe el formato.';
+        spanErrorWebSite.innerHTML = 'La dirección web introducida no es válida. Por favor compruebe el formato.';
         return false;
     }
 }
