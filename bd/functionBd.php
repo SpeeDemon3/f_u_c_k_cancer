@@ -624,7 +624,7 @@ function getLastTwoNews() {
 function mostrarUltimasAsociaciones()
 {
     // Consulta para obtener las 3 últimas asociaciones
-    $query = "SELECT * FROM associations ORDER BY nombre_asociacion DESC LIMIT 3";
+    $query = "SELECT * FROM associations ORDER BY id DESC LIMIT 3";
     $result = mysqli_query($GLOBALS['con'], $query) or die("Error en la consulta");
 
     if (mysqli_num_rows($result) > 0) {
