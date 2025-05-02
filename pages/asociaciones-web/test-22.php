@@ -37,7 +37,7 @@
         <main class="container my-5">
             <h1 class="text-center mb-4 font-monospace" style="color:rgb(88, 34, 162);">Test 22</h1>
             <div class="text-center mb-4">
-                <img src="../../img/logo-asociacion/1742149972_asociacion-4.jpg" alt="Test 22" class="img-fluid rounded shadow-lg" style="max-width: 100%; height: auto; border-radius: 10px;">
+                <img src="../../img/logo-asociacion/1742149972_asociacion-4.jpg" alt="Test 22" class="img-fluid rounded shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
             </div>
             <div class="web-asociacion-contenido text-center mx-auto" style="max-width: 800px; font-size: 1.1rem; line-height: 1.6;">
                 <p>soy un nuevo test</p>

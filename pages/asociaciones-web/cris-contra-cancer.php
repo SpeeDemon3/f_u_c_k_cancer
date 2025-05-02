@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test 2dd - Asociación</title>
+    <title>Lucha Contra el Cáncer - Asociación</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
 </head>
@@ -35,16 +35,14 @@
         </nav>
 
         <main class="container my-5">
-            <h1 class="text-center mb-4 font-monospace" style="color:rgb(88, 34, 162);">Test 2dd</h1>
+            <h1 class="text-center mb-4 font-monospace" style="color:rgb(88, 34, 162);">criscancer</h1>
             <div class="text-center mb-4">
-                <img src="../../img/logo-asociacion/1742150282_asociacion-5.jpg" alt="Test 2dd" class="img-fluid rounded shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
+                <img src="../../img/logo-asociacion/1745564392_asociacion-5.jpg" alt="Lucha Contra el Cáncer" class="img-fluid rounded shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
             </div>
             <div class="web-asociacion-contenido text-center mx-auto" style="max-width: 800px; font-size: 1.1rem; line-height: 1.6;">
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &quot;de Finibus Bonorum et Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from &quot;de Finibus Bonorum et Malorum&quot; by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                <p><strong>Teléfono:</strong> 666666666</p>
-                <p><strong>Sitio Web:</strong> <a href="https://www.contraelcancer.es" target="_blank">https://www.contraelcancer.es</a></p>
+                <p>Es una organización de carácter privado e independiente cuyo objetivo es fomentar y financiar proyectos de investigación para el tratamiento y cura del cáncer.</p>
+                <p><strong>Teléfono:</strong> 923226789</p>
+                <p><strong>Sitio Web:</strong> <a href="https://www.contraelcancer.es/es" target="_blank">https://criscancer.org/es/</a></p>
             </div>
             <div class="text-center mt-5">
                 <a href="../../index.php" class="btn btn-dark">Volver al inicio</a>
