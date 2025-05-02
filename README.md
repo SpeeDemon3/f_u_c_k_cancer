@@ -44,7 +44,7 @@ mysql -u [usuario] -p [nombre_bd] < bd/base_datos.sql
 ## 📁 Estructura del Proyecto / 📁 Project Structure
 
 ```
-`plaintext
+```plaintext
 f_u_c_k_cancer/
 ├── bd/                  # Scripts SQL y backups / SQL scripts and backups
 │   └── base_datos.sql
