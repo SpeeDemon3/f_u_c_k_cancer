@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS news (
 );
 
 /* Registros para llenar las tablas*/
-INSERT INTO bd_contra_cancer.users (nombre,email,pass,rol) VALUES
+INSERT INTO bd_contra_cancer.users (id,nombre,email,pass,rol) VALUES
 	 (1,'Admin','admin@gmail.com','Password12345!6',3),/*Rol Admin*/
 	 (5,'Asociación Española Contra el Cáncer','aContraelCancer@gamil.com','Password12345!6',1),
 	 (6,'Asociación de Pacientes Oncológicos','contacto@pacientesonco.org','Password12345!6',1),
@@ -50,7 +50,7 @@ INSERT INTO bd_contra_cancer.users (nombre,email,pass,rol) VALUES
 	 (12,'Test 2','Test2@Test2.com','Password12345!6',1),
 	 (14,'Test 2','Test2@Test222.com','Password12345!6',1),
 	 (15,'Test 2','Test2@Test2222.com','Password12345!6',1);
-INSERT INTO bd_contra_cancer.users (nombre,email,pass,rol) VALUES
+INSERT INTO bd_contra_cancer.users (id,nombre,email,pass,rol) VALUES
 	 (16,'Test 2','Test2@Test2222e.com','Password12345!6',1),
 	 (17,'Test 22','Test22@Test22.es','Password12345!6',1),
 	 (18,'Test 211','Test2112@Test2.es','Password12345!6',1),
@@ -59,7 +59,7 @@ INSERT INTO bd_contra_cancer.users (nombre,email,pass,rol) VALUES
 	 (21,'Lucha Contra el Cáncer','test1contraelcancer@test.es','Password12345!6',1);
 
 
-INSERT INTO bd_contra_cancer.associations (nombre_asociacion,email,pass,descripcion,logo,telefono,sitio_web,user_id,pagina) VALUES
+INSERT INTO bd_contra_cancer.associations (id,nombre_asociacion,email,pass,descripcion,logo,telefono,sitio_web,user_id,pagina) VALUES
 	 (4,'Asociación Española Contra el Cáncer','aContraelCancer@gamil.com','Password12345!6','Nuestro propósito es aliviar y evitar, en la medida que sea posible, el sufrimiento en las personas producido por el cáncer, cualquier que sea su lugar de residencia y sus circunstancias personales.','img/logo-asociacion/1742047501_asociacion-1.jpg','912345678','https://www.contraelcancer.es/es',5,'pages/asociaciones-web/asociaci-n-espaniola-contra-el-can.php'),
 	 (5,'Asociación de Pacientes Oncológicos','contacto@pacientesonco.org','Password12345!6','Grupo de apoyo para pacientes y familiares afectados por el cáncer.','img/logo-asociacion/1742047592_asociacion-4.jpg','923456789','https://www.pacientesonco.org',6,'pages/asociaciones-web/pacientes-oncologicos.php'),
 	 (6,'criscancer','criscancer@gmail.org','Password12345!613','Es una organización de carácter privado e independiente cuyo objetivo es fomentar y financiar proyectos de investigación para el tratamiento y cura del cáncer.','img/logo-asociacion/1742047676_asociacion-5.jpg','923226789','https://criscancer.org/es/',7,'pages/asociaciones-web/cris-contra-cancer.php'),
@@ -72,7 +72,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 	 (12,'Lucha Contra el Cáncer','test1contraelcancer@test.es','Password12345!6','Esto es un test de prueba para la descripción editada','img/logo-asociacion/1745564392_asociacion-5.jpg','912345678','https://www.contraelcancer.es/es',21,'pages/asociaciones-web/lucha-contra-el-c-ncer.php');
 
 
-INSERT INTO bd_contra_cancer.news (titulo,contenido,imagen_url,fecha_publicacion,ruta_pagina,autor_id) VALUES
+INSERT INTO bd_contra_cancer.news (id,titulo,contenido,imagen_url,fecha_publicacion,ruta_pagina,autor_id) VALUES
 	 (5,'Nuevo tratamiento para el cáncer de mama','Un equipo de investigadores ha desarrollado un tratamiento innovador para el cáncer de mama.','img/noticias/67d5933cd7b97_noticas-2.jpg','2025-03-15 15:48:28','pages/noticias/noticia_5.php',5),
 	 (6,'Campaña de detección temprana de cáncer de piel','Cada año, 300 niños en España son diagnosticados con tumores cerebrales, una realidad que persiste como la segunda causa de muerte por cáncer en menores de 15 años a pesar de los avances en tratamientos. Entre estos tumores, el Glioma Difuso de la Línea Media (DMG) emerge como uno de los más desafiantes, con apenas un 10% de los niños logrando sobrevivir más allá de los 2 años posteriores al diagnóstico. Aunque la radioterapia sigue siendo un pilar en el tratamiento de tumores cerebrales infantiles, su eficacia en niños con DMG solo prolonga la supervivencia por unos pocos meses.','img/noticias/67d593a22f76b_noticias-7.jpg','2025-03-15 15:50:10','pages/noticias/noticia_6.php',6),
 	 (10,'En un estudio se busca reducir el estigma del cáncer de pulmón enseñando empatía a los profesionales de la salud','Para las personas con antecedentes de tabaquismo, es posible que un diagnóstico de cáncer de pulmón cause sentimientos de culpa y vergüenza debido al estigma que se suele asociar con la enfermedad. Este estigma a veces dificulta la comunicación sincera entre los pacientes y los proveedores de atención de la salud, e impide que reciban el asesoramiento para que los pacientes dejen de fumar. Los investigadores del Centro Oncológico Memorial Sloan Kettering crearon un programa de capacitación para ayudar a los proveedores de atención de la salud a reducir el estigma relacionado con el cáncer de pulmón. En esta entrevista, las encargadas del estudio, la doctora Smita Banerjee, científica especialista en conducta, y la doctora Jamie Ostroff, psicóloga, analizan el efecto del estigma en las personas con cáncer de pulmón, así como un estudio clínico que financia el NCI en el que se evalúa el programa de capacitación.','img/noticias/67e97401e5cc2_noticas-4.jpg','2025-03-30 18:40:33','pages/noticias/noticia_10.php',6),
