@@ -43,7 +43,6 @@ mysql -u [usuario] -p [nombre_bd] < bd/base_datos.sql
 
 ## 📁 Estructura del Proyecto / 📁 Project Structure
 
-```
 ```plaintext
 f_u_c_k_cancer/
 ├── bd/                  # Scripts SQL y backups / SQL scripts and backups
@@ -60,7 +59,7 @@ f_u_c_k_cancer/
 │   └── noticias/
 ├── index.php            # Punto de entrada / Entry point
 └── LICENSE              # Licencia GPL-3.0 / GPL-3.0 License
-`
+```
 ---
 
 ## ⚙️ Tecnologías Utilizadas / ⚙️ Technologies Used
