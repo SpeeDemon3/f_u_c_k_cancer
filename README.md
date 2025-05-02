@@ -1,6 +1,6 @@
 # 🎗️ F.U.C.K Cancer (Fight Until Cancer Kicks)
 
-**Plataforma web para asociaciones contra el cáncer** que facilita la gestión de pacientes, tratamientos y recursos educativos.
+**Plataforma web para asociaciones contra el cáncer** que facilita la gestión de asociaciones, noticias, tratamientos y recursos educativos.
 
 ## 🌟 Características Principales
 
