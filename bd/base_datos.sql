@@ -98,8 +98,3 @@ Acerca del Instituto Nacional del Cáncer: El Instituto Nacional del Cáncer (NC
 
 Acerca de los Institutos Nacionales de la Salud: Los Institutos Nacionales de la Salud (NIH) son el organismo nacional de investigación médica, integrado por 27 institutos y centros, y es un componente del Departamento de Salud y Servicios Humanos (HHS) de los Estados Unidos. Los NIH son el organismo federal principal que lleva a cabo y apoya la investigación básica, clínica y médica traslacional e investiga las causas, los tratamientos y las curas de enfermedades comunes y raras. Para obtener más información sobre los NIH y sus programas, visite salud.nih.gov.','img/noticias/67e9748ce2f43_noticais-5.jpg','2025-03-30 18:42:52','pages/noticias/noticia_11.php',6);
 
-
-
-
-
-
