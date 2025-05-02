@@ -1,5 +1,8 @@
 # 🎗️ F.U.C.K Cancer 
 
+![Logo del Proyecto](img/logo-web.jpg)
+
+
 **Plataforma web para asociaciones contra el cáncer** que facilita la gestión de asociaciones, noticias, tratamientos y recursos educativos.
 **Web platform for cancer associations** that facilitates the management of associations, news, treatments, and educational resources.
 
