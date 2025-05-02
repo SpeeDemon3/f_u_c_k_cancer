@@ -59,7 +59,7 @@ f_u_c_k_cancer/
 │   └── noticias/
 ├── index.php            # Punto de entrada / Entry point
 └── LICENSE              # Licencia GPL-3.0 / GPL-3.0 License
-
+```
 ---
 
 ## ⚙️ Tecnologías Utilizadas / ⚙️ Technologies Used
