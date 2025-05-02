@@ -177,6 +177,9 @@ function getUserByEmailAndPass($email, $pass)
     }
 }
 
+/**
+ * Método para eliminar un usuario por su id
+ */
 function deleteUser($id)
 {
     $query = "DELETE FROM associations WHERE id = $id;";

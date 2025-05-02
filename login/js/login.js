@@ -21,6 +21,10 @@ form.addEventListener('submit', function(event) {
     }
 })
 
+/**
+ * Método para validar el email
+ * @returns True si cumple, false en caso contrario
+ */
 function validateEmail() {
     // Obtengo los elementos del HTML
     let inputEmail = document.getElementById('email');
@@ -45,7 +49,10 @@ function validateEmail() {
 
 }
 
-
+/**
+ * Método para validar el password
+ * @returns True si cumple, false en caso contrario
+ */
 function validatePassword() {
     // Obtengo los elementos del HTML
     let inputPass = document.getElementById('password');
